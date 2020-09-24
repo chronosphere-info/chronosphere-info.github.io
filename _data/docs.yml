@@ -8,4 +8,7 @@
   docs:
   - cheatsheet
   - font-awesome
-  - bootstrap
+
+- title: Data documentation
+  docs:
+  - paleomap
