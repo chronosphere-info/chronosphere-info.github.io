@@ -11,5 +11,7 @@
 
 - title: Data documentation
   docs:
+  - ETOPO1
+  - GPlates
   - paleomap
   - pbdb

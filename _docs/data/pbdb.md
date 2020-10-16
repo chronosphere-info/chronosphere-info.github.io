@@ -10,11 +10,11 @@ The Paleobiology Database is a public database of paleontological data that anyo
 occs - Raw species occurrences
 
 
-### Resolution 
+#### Resolution 
 
 species
 
-### Version
+#### Versions
 
 20191122
 
@@ -22,7 +22,9 @@ species
 
 20200623 
 
-### Licence
+
+
+#### Licence
 
 
 [CC-BY](https://opendefinition.org/licenses/cc-by/)
