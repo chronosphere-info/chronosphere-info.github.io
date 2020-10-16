@@ -1,6 +1,6 @@
 ---
 title: The PaleoReefs Database (pared)
-permalink: /docs/pared
+permalink: /docs/pared/
 ---
 A comprehensive relational database on pre-Quaternary Phanerozoic reefs. The database contains coded and standardized information on position/paleoposition, age, reef type, dimensions, environmental setting, paleontological and petrographical features, and reservoir quality of Phanerozoic reefs.
 
