@@ -2,4 +2,32 @@
 title: Paleobiology Database
 permalink: /docs/pbdb/
 ---
-Info goes here
+The Paleobiology Database is a public database of paleontological data that anyone can use, maintained by an international non-governmental group of paleontologists.
+
+
+### Available variables 
+
+occs - Raw species occurrences
+
+
+### Resolution 
+
+species
+
+### Version
+
+20191122
+
+20200217
+
+20200623 
+
+### Licence
+
+
+[CC-BY](https://opendefinition.org/licenses/cc-by/)
+
+
+### Reference
+
+The Paleobiology Database [www.paleobiodb.org](URL: https://paleobiodb.org//)
