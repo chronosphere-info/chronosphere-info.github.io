@@ -1,5 +1,5 @@
 ---
-title: Paleobiology Database
+title: Paleobiology Database (pbdb)
 permalink: /docs/pbdb/
 ---
 The Paleobiology Database is a public database of paleontological data that anyone can use, maintained by an international non-governmental group of paleontologists.

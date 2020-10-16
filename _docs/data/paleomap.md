@@ -1,5 +1,5 @@
 ---
-title: PaleoMAP
+title: PaleoMAP Project
 permalink: /docs/paleomap/
 ---
 The PaleoMAP Project is to illustrate the plate tectonic development of the ocean basins and continents, as well as the changing distribution of land and sea during the past 1100 million years.
