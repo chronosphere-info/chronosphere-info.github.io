@@ -19,6 +19,10 @@ Access the paleo maps variable ("muma") of the "GPlates" dataset with a `fetch()
 
 none
 
+#### Archive size
+
+GPlates_muma_2016_GK07: 2.01 MB
+
 #### Version
 
 2016_GK07

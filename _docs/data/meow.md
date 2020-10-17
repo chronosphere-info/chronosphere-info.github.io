@@ -21,6 +21,10 @@ Access the ecoregions shapefiles variable ("ecos") of the "meow" dataset with a 
 
 ecoregions
 
+#### Archive size
+
+meow_ecos_20080710_ecoregions: 507 KB
+
 #### Version
 
 20080710

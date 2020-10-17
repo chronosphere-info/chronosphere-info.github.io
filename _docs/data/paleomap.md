@@ -34,6 +34,12 @@ Access the digital elevation model variable ("dem") of the "paleomap" dataset wi
 
 1.0
 
+#### Archive size
+
+paleomap_dem_20190719_0.5: 30.6 MB
+paleomap_dem_20190719_1: 6.07 MB
+
+
 #### Version
 
 20190719
@@ -55,6 +61,11 @@ Access the plate tectonic reconstruction model variable ("model") of the "paleom
 #### Resolution
 
 none
+
+#### Archive size
+
+paleomap_model_v19o_r1c: 5.11 MB
+paleomap_model_v3-GPlates: 5.11 MB
 
 #### Versions
 
@@ -83,6 +94,11 @@ Access the paleoatlas paleorasters variable ("paleoatlas") of the "paleomap" dat
 0.5
 
 0.1
+
+#### Archive size
+
+paleomap_paleoatlas_20160216v3_0.5: 52.4 MB
+paleomap_paleoatlas_20160216v3_0.1: 6.04 MB
 
 #### Version
 

@@ -27,6 +27,10 @@ Access the land polygons variable ("land") of the "NaturalEarth" dataset with a 
 
 10.0
 
+#### Archive size
+
+NaturalEarth_land_4-1-0_10:6.28 MB
+
 #### Version
 
 4-1-0
@@ -49,6 +53,10 @@ Access the land polygons of minor islands variable ("minorislands") of the "Natu
 #### Resolution 
 
 10.0
+
+#### Archive size
+
+NaturalEarth_minorislands_4-1-0_10: 864 KB
 
 #### Version
 

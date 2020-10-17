@@ -20,6 +20,11 @@ Access the public reef occurrences variable ("occs") of the "pared" dataset with
 
 none
 
+#### Archive size
+
+pared_occs_20191118:2.07 MB
+pared_occs_20200217:2.07 MB
+
 #### Version
 
 20191118

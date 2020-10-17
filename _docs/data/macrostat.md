@@ -1,6 +1,6 @@
 ---
 title: Macrostrat	
-permalink: /docs/macrostat/
+permalink: /docs/macrostrat/
 ---
 Macrostrat is a platform for the aggregation and distribution of geological data relevant to the spatial and temporal distribution of sedimentary, igneous, and metamorphic rocks as well as data extracted from them.
 
@@ -21,6 +21,10 @@ Access the stratigraphic database variable ("all") of the "macrostrat" dataset w
 #### Resolution 
 
 none
+
+#### Archive size
+
+macrostrat_all_20200519: 19.7 MB
 
 #### Version
 

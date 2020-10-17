@@ -19,6 +19,10 @@ Access the stratigraphic ranges of marine genera variable ("genera") of the "sep
 
 none
 
+#### Archive size
+
+sepkoski_genera_2002_kiessling: 2.71 MB
+
 #### Version
 
 2002_kiessling

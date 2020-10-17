@@ -21,6 +21,11 @@ Access the raw species occurrences variable ("occs") of the "pbdb" dataset with 
 
 species
 
+#### Archive size
+
+pbdb_occs_20191122_species: 79.6 MB
+pbdb_occs_20200217_species: 80.8 MB
+
 #### Versions
 
 20191122

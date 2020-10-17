@@ -1,6 +1,6 @@
 ---
-title: Hadley Centre Sea Ice and Sea Surface Temperature data set (HADISST1)
-permalink: /docs/HADISST1/
+title: Hadley Centre Sea Ice and Sea Surface Temperature data set (HadISST1)
+permalink: /docs/HadISST1/
 ---
 HadISST1 is the the Met Office Hadley Centre's sea ice and sea surface temperature (SST) data set.HadISST1 replaces the global sea ice and sea surface temperature (GISST) data sets and is a unique combination of monthly globally complete fields of SST and sea ice concentration on a 1x1 latitude-longitude grid from 1871.
 
@@ -10,10 +10,10 @@ HadISST1 is the the Met Office Hadley Centre's sea ice and sea surface temperatu
 
 sst - Sea Surface Temperature.
 
-Access the sea surface temperature variable ("sst") of the "HADISST1" dataset with a `fetch()` function:
+Access the sea surface temperature variable ("sst") of the "HadISST1" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("HADISST1", "sst")
+ maps <- fetch("HadISST1", "sst")
 
 ```
 
@@ -21,6 +21,10 @@ Access the sea surface temperature variable ("sst") of the "HADISST1" dataset wi
 #### Resolution 
 
 1.0
+
+#### Archive size
+
+HadISST1_sst_20191212_1: 444 MB
 
 #### Version
 

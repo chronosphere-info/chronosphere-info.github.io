@@ -29,6 +29,10 @@ Access the body size, sampling completeness, and extinction risk in the marine f
 
 none
 
+#### Archive size
+
+som_heim-body_2019-12-11_v2: 1.08 MB
+
 #### Version
 
 2019-12-11_v2
@@ -54,6 +58,10 @@ Access the traits of coral genera variable ("kiessling-coralgenera") of the "som
 
 none
 
+#### Archive size
+
+som_kiessling-coralgenera_0.53
+
 #### Version
 
 0.54
@@ -76,6 +84,10 @@ Access the O18 and C13 Stable isotope data variable ("veizer-isotope") of the "s
 #### Resolution
 
 none
+
+#### Archive size
+
+som_veizer-isotope_2015-onelist: 4.12 MB
 
 #### Version
 
@@ -100,6 +112,10 @@ Access the continent fragmentation index variable ("zaffos-fragment") of the "so
 #### Resolution
 
 none
+
+#### Archive size
+
+som_zaffos-fragment_zaffos_et_al_2017:19.4 KB
 
 #### Version
 

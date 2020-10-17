@@ -19,6 +19,10 @@ Access the air temperatures variable ("air") of the "Temp12k" dataset with a `fe
 
 none
 
+#### Archive size 
+
+Temp12k_air_v1_0_0: 17.5 MB
+
 #### Version
 
 v1_0_0
