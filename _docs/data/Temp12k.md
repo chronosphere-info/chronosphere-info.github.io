@@ -11,7 +11,7 @@ air - Air temperatures
 Access the air temperatures variable ("air") of the "Temp12k" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("Temp12k", "air")
+ temp <- fetch("Temp12k", "air")
 
 ```
 

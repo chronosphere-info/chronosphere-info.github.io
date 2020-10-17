@@ -19,7 +19,7 @@ Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:11
 Access the land polygons variable ("land") of the "NaturalEarth" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("NaturalEarth", "land")
+ land <- fetch("NaturalEarth", "land")
 
 ```
 
@@ -42,7 +42,7 @@ Public domain
 Access the land polygons of minor islands variable ("minorislands") of the "NaturalEarth" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("NaturalEarth", "minorislands")
+ minorislands <- fetch("NaturalEarth", "minorislands")
 
 ```
 

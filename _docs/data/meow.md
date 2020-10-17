@@ -13,7 +13,7 @@ ecos - Ecoregion shapefiles
 Access the ecoregions shapefiles variable ("ecos") of the "meow" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("meow", "ecos")
+ ecoreg <- fetch("meow", "ecos")
 
 ```
 

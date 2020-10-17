@@ -21,7 +21,7 @@ A data set comprising the body sizes, stratigraphic ranges, and occurrence patte
 Access the body size, sampling completeness, and extinction risk in the marine fossil record variable ("heim-body") of the "som" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("som", "heim-body")
+ body <- fetch("som", "heim-body")
 
 ```
 
@@ -45,7 +45,7 @@ Traits of coral genera.
 Access the traits of coral genera variable ("kiessling-coralgenera") of the "som" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("som", "kiessling-coralgenera")
+ coral <- fetch("som", "kiessling-coralgenera")
 
 ```
 
@@ -69,7 +69,7 @@ A compilation of 18O measurements for 58,532 low-Mg calcite marine shells that c
 Access the O18 and C13 Stable isotope data variable ("veizer-isotope") of the "som" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("som", "veizer-isotope")
+ isotope <- fetch("som", "veizer-isotope")
 
 ```
 
@@ -93,7 +93,7 @@ A global database of marine animal fossil occurrences and a paleogeographic reco
 Access the continent fragmentation index variable ("zaffos-fragment") of the "som" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("som", "zaffos-fragment")
+ frag <- fetch("som", "zaffos-fragment")
 
 ```
 

@@ -14,7 +14,7 @@ all - Stratigraphic Database
 Access the stratigraphic database variable ("all") of the "macrostrat" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("macrostrat", "all")
+ strat <- fetch("macrostrat", "all")
 
 ```
 

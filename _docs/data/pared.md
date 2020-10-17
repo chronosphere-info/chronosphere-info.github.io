@@ -12,7 +12,7 @@ occs - Public Reef occurrences
 Access the public reef occurrences variable ("occs") of the "pared" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("pared", "occs")
+ reefs <- fetch("pared", "occs")
 
 ```
 

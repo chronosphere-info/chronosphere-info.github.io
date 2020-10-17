@@ -74,7 +74,7 @@ The PALEOMAP PaleoAtlas for GPlates consists of 91 paleogeographic maps spanning
 Access the paleoatlas paleorasters variable ("paleoatlas") of the "paleomap" dataset with a `fetch()` function:
 
 ```{r}
- maps <- fetch("paleomap", "paleoatlas")
+ paleoras <- fetch("paleomap", "paleoatlas")
 
 ```
 
