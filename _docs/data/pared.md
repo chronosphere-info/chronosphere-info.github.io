@@ -9,6 +9,13 @@ A comprehensive relational database on pre-Quaternary Phanerozoic reefs. The dat
 
 occs - Public Reef occurrences
 
+Access the public reef occurrences variable ("occs") of the "pared" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("pared", "occs")
+
+```
+
 #### Resolution 
 
 none

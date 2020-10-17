@@ -10,6 +10,13 @@ This is a new global system for coastal and shelf areas: the Marine Ecoregions o
 
 ecos - Ecoregion shapefiles
 
+Access the ecoregions shapefiles variable ("ecos") of the "meow" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("meow", "ecos")
+
+```
+
 #### Resolution 
 
 ecoregions

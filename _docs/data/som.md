@@ -18,6 +18,13 @@ Data sets compiled from supplementary online materials to scientific publication
 
 A data set comprising the body sizes, stratigraphic ranges, and occurrence patterns of 9408 genera of fossil marine animals spanning eight Linnaean classes across the past 485 Myr.
 
+Access the body size, sampling completeness, and extinction risk in the marine fossil record variable ("heim-body") of the "som" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("som", "heim-body")
+
+```
+
 #### Resolution
 
 none
@@ -29,19 +36,42 @@ none
 #### Licence
 
 
-CC0 1.0
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Kiessling coral genera
 
+Traits of coral genera.
+
+Access the traits of coral genera variable ("kiessling-coralgenera") of the "som" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("som", "kiessling-coralgenera")
+
+```
+
+
 #### Resolution
+
+none
 
 #### Version
 
+0.54
+
 #### Licence
+
+[CC-BY](https://opendefinition.org/licenses/cc-by/)
 
 ### Veizer isotope
 
 A compilation of 18O measurements for 58,532 low-Mg calcite marine shells that cover almost the entire Phanerozoic eon.
+
+Access the O18 and C13 Stable isotope data variable ("veizer-isotope") of the "som" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("som", "veizer-isotope")
+
+```
 
 #### Resolution
 
@@ -60,7 +90,12 @@ Not specified
 
 A global database of marine animal fossil occurrences and a paleogeographic reconstruction model.
 
+Access the continent fragmentation index variable ("zaffos-fragment") of the "som" dataset with a `fetch()` function:
 
+```{r}
+ maps <- fetch("som", "zaffos-fragment")
+
+```
 
 #### Resolution
 

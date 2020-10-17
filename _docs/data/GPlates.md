@@ -1,12 +1,19 @@
 ---
-title: GPlates Resources data set
+title: GPlates Resources data set (GPlates)
 permalink: /docs/GPlates/
 ---
 The PALEOMAP PaleoAtlas for GPlates consists of 91 paleogeographic maps spanning the Phanerozoic and late Neoproterozoic. The PaleoAtlas can be directly loaded into GPlates as a Time Dependent Raster file. The paleogeographic maps in the PaleoAtlas illustrate the ancient configuration of the ocean basins and continents, as well as important topographic and bathymetric features such as mountains, lowlands, shallow sea, continental shelves, and deep oceans.
 
 ### Available variables 
 
-muma - The Matthews et al. (2016) rotations with the Muller et al. (2016) static polygons	
+muma - The Matthews et al. (2016) rotations with the Muller et al. (2016) static polygons.
+
+Access the paleo maps variable ("muma") of the "GPlates" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("GPlates", "muma")
+
+```
 
 #### Resolution 
 

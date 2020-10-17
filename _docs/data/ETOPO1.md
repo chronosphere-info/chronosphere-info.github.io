@@ -1,5 +1,5 @@
 ---
-title: ETOPO1 Global Relief Model
+title: ETOPO1 Global Relief Model (ETOPO1)
 permalink: /docs/ETOPO1/
 ---
 ETOPO1 is a 1 arc-minute global relief model of Earth's surface that integrates land topography and ocean bathymetry. It was built from numerous global and regional data sets. Data were converted to the PanMap layer format in 14 contour lines from 500 to 7000 meter in steps of 500 m.
@@ -13,7 +13,14 @@ ETOPO1 is a 1 arc-minute global relief model of Earth's surface that integrates 
 
 ### Bedrock 
 
-ETOPO1 Global Relief Model for bedrock
+ETOPO1 Global Relief Model for bedrock.
+
+Access the bedrock variable ("bed") of the dataset with the `fetch()` function:
+
+```{r}
+bedrock <- fetch("ETOPO1","bed")
+
+```
 
 #### Resolution 
 
@@ -34,7 +41,15 @@ c_20110606_tiff
 
 ### Ice surface 
 
-ETOPO1 Global Relief Model for ice surface
+ETOPO1 Global Relief Model for ice surface. 
+
+Access the ice surface variable ("ice") of the ETOPO1 dataset with the `fetch()` function:
+
+```{r}
+
+icesurf <- fetch("ETOPO1", "ice")
+
+```
 
 #### Resolution 
 

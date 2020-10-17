@@ -8,6 +8,13 @@ A global compilation of quality-controlled, published, temperature-sensitive pro
 
 air - Air temperatures
 
+Access the air temperatures variable ("air") of the "Temp12k" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("Temp12k", "air")
+
+```
+
 #### Resolution 
 
 none

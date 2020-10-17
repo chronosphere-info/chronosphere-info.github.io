@@ -8,6 +8,13 @@ The purpose of this database is to allow users to easily search and summarize Se
 
 genera - Startigraphic ranges of marine genera
 
+Access the stratigraphic ranges of marine genera variable ("genera") of the "sepkoski" dataset with a `fetch()` function:
+
+```{r}
+ maps <- fetch("sepkoski", "genera")
+
+```
+
 #### Resolution 
 
 none
