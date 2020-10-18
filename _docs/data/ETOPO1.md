@@ -33,7 +33,9 @@ bedrock <- fetch("ETOPO1","bed")
 #### Archive size
 
 ETOPO1_bed_c_20110606_tiff_0.017: 445 MB
+
 ETOPO1_bed_c_20110606_tiff_0.1: 27.9 MB
+
 ETOPO1_bed_c_20110606_tiff_1: 295 KB
 
 #### Version
@@ -68,7 +70,9 @@ icesurf <- fetch("ETOPO1", "ice")
 #### Archive size
 
 ETOPO1_ice_c_20110606_tiff_0.017:445 MB
+
 ETOPO1_ice_c_20110606_tiff_0.1: 27.7 MB
+
 ETOPO1_ice_c_20110606_tiff_1: 296 KB
 
 
