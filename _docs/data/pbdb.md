@@ -9,10 +9,22 @@ The Paleobiology Database is a public database of paleontological data that anyo
 
 occs - Raw species occurrences
 
+The dataset downloaded from [here](https://paleobiodb.org/).
+
 Access the raw species occurrences variable ("occs") of the "pbdb" dataset with a `fetch()` function:
 
 ```{r}
  spec <- fetch("pbdb", "occs")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+spec <- fetch(dat = "pbdb", var = "occs", dir, verbose=FALSE)
 
 ```
 

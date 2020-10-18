@@ -10,6 +10,8 @@ ETOPO1 is a 1 arc-minute global relief model of Earth's surface that integrates 
 
 [ice - Ice surface](#ice-surface)
 
+The dataset downloaded from [here](https://www.ngdc.noaa.gov/mgg/global/).
+
 
 ### Bedrock 
 
@@ -19,6 +21,17 @@ Access the bedrock variable ("bed") of the dataset with the `fetch()` function:
 
 ```{r}
 bedrock <- fetch("ETOPO1","bed")
+
+```
+
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+bedrock <- fetch(dat = "ETOPO1", var = "bed", dir, verbose=FALSE)
 
 ```
 
@@ -56,6 +69,18 @@ Access the ice surface variable ("ice") of the ETOPO1 dataset with the `fetch()`
 ```{r}
 
 icesurf <- fetch("ETOPO1", "ice")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose`(logical) determines should feedback be output to the console?
+
+The argument `na` (logical) determines should missing values be replaced with NAs? It forces raster into memory.
+
+```{r}
+icesurf <- fetch(dat = "ETOPO1", var = "ice", dir, verbose=FALSE, na=TRUE)
 
 ```
 

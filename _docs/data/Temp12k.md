@@ -8,10 +8,22 @@ A global compilation of quality-controlled, published, temperature-sensitive pro
 
 air - Air temperatures
 
+The dataset downloaded from [here](https://doi.org/10.25921/4RY2-G808).
+
 Access the air temperatures variable ("air") of the "Temp12k" dataset with a `fetch()` function:
 
 ```{r}
  temp <- fetch("Temp12k", "air")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+temp <- fetch(dat = "Temp12k", var = "air", dir, verbose=FALSE)
 
 ```
 

@@ -8,11 +8,17 @@ Data sets compiled from supplementary online materials to scientific publication
 
 [heim-body - Body size, sampling completeness, and extinction risk in the marine fossil record](#heim-body)
 
+The dataset downloaded from [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.zpc866t5b).
+
 [kiessling-coralgenera - Traits of coral genera](#kiessling-coral-genera)
+
+The dataset downloaded from [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.mv32t).
 
 [veizer-isotope - O18 and C13 Stable isotope data](#veizer-isotope)
 
 [zaffos-fragment - Continent Fragmentation index of Zaffos et al. 2017](#zaffos-fragment)
+
+The dataset downloaded from [here](https://github.com/UW-Macrostrat/PNAS_201702297).
 
 ### Heim - body
 
@@ -22,6 +28,16 @@ Access the body size, sampling completeness, and extinction risk in the marine f
 
 ```{r}
  body <- fetch("som", "heim-body")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+body <- fetch(dat = "som", var = "heim-body", dir, verbose=FALSE)
 
 ```
 
@@ -80,6 +96,18 @@ Access the O18 and C13 Stable isotope data variable ("veizer-isotope") of the "s
  isotope <- fetch("som", "veizer-isotope")
 
 ```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+The argument `detrend` (logical) should the dataset be detrended as they suggest it in their paper?
+
+```{r}
+body <- fetch(dat = "som", var = "veizer-isotope", dir, verbose=FALSE, detrend = FALSE)
+
+```
 
 #### Resolution
 
@@ -108,6 +136,18 @@ Access the continent fragmentation index variable ("zaffos-fragment") of the "so
  frag <- fetch("som", "zaffos-fragment")
 
 ```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+
+```{r}
+body <- fetch(dat = "som", var = "zaffos-fragment", dir, verbose=FALSE)
+
+```
+
 
 #### Resolution
 

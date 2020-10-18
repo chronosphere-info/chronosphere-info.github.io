@@ -6,12 +6,24 @@ The purpose of this database is to allow users to easily search and summarize Se
 
 ### Available variables 
 
-genera - Startigraphic ranges of marine genera
+genera - Startigraphic ranges of marine genera.
+
+The dataset downloaded from [here](http://strata.geology.wisc.edu/jack/).
 
 Access the stratigraphic ranges of marine genera variable ("genera") of the "sepkoski" dataset with a `fetch()` function:
 
 ```{r}
  margen <- fetch("sepkoski", "genera")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+margen <- fetch(dat = "sepkoski", var = "genera", dir, verbose=FALSE)
 
 ```
 

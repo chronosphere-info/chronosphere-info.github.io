@@ -10,16 +10,32 @@ This is a new global system for coastal and shelf areas: the Marine Ecoregions o
 
 ecos - Ecoregion shapefiles
 
+The dataset downloaded from [here](https://www.worldwildlife.org/publications/marine-ecoregions-of-the-world-a-bioregionalization-of-coastal-and-shelf-areas).
+
+This dataset requires the 'rgdal' package to load.
+
 Access the ecoregions shapefiles variable ("ecos") of the "meow" dataset with a `fetch()` function:
 
 ```{r}
  ecoreg <- fetch("meow", "ecos")
 
 ```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+ecoreg <- fetch(dat = "meow", var = "ecos", dir, verbose=FALSE)
+
+```
 
 #### Resolution 
 
 ecoregions
+
+
 
 #### Archive size
 

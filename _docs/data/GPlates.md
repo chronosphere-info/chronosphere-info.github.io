@@ -8,10 +8,22 @@ The PALEOMAP PaleoAtlas for GPlates consists of 91 paleogeographic maps spanning
 
 muma - The Matthews et al. (2016) rotations with the Muller et al. (2016) static polygons.
 
+The dataset downloaded from [here](http://www.earthbyte.org/gplates-2-1-software-and-data-sets/).
+
 Access the paleo maps variable ("muma") of the "GPlates" dataset with a `fetch()` function:
 
 ```{r}
  maps <- fetch("GPlates", "muma")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+maps <- fetch(dat = "GPlates", var = "muma", dir, verbose=FALSE)
 
 ```
 

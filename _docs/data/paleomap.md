@@ -11,9 +11,15 @@ The PaleoMAP Project is to illustrate the plate tectonic development of the ocea
 
 [dem - PaleoDEM Digital Elevation Models](#paleodem-digital-elevation-models)
 
+The dataset downloaded from [here](https://www.earthbyte.org/paleodem-resource-scotese-and-wright-2018/).
+
 [model - Plate Tectonic Reconstruction Model](#plate-tectonic-reconstruction-model)
 
+The dataset downloaded from [here](https://www.earthbyte.org/webdav/ftp/earthbyte/Scotese_PaleoAtlas_v3.zip).
+
 [paleoatlas -PaleoAtlas paleorasters](#paleoatlas-paleorasters)
+
+The dataset downloaded from [here](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/).
 
 
 
@@ -29,7 +35,16 @@ Access the digital elevation model variable ("dem") of the "paleomap" dataset wi
  maps <- fetch("paleomap", "dem")
 
 ```
+#### Additional arguments
 
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+maps <- fetch(dat = "paleomap", var = "dem", dir, verbose=FALSE)
+
+```
 
 
 #### Resolution 
@@ -57,10 +72,21 @@ paleomap_dem_20190719_1: 6.07 MB
 
 The PALEOMAP PaleoAtlas for GPlates consists of 91 paleogeographic maps spanning the Phanerozoic and late Neoproterozoic. The PaleoAtlas can be directly loaded into GPlates as a Time Dependent Raster file. The paleogeographic maps in the PaleoAtlas illustrate the ancient configuration of the ocean basins and continents, as well as important topographic and bathymetric features such as mountains, lowlands, shallow sea, continental shelves, and deep oceans.
 
+
 Access the plate tectonic reconstruction model variable ("model") of the "paleomap" dataset with a `fetch()` function:
 
 ```{r}
  maps <- fetch("paleomap", "model")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+maps <- fetch(dat = "paleomap", var = "model", dir, verbose=FALSE)
 
 ```
 
@@ -95,6 +121,16 @@ Access the paleoatlas paleorasters variable ("paleoatlas") of the "paleomap" dat
 
 ```{r}
  paleoras <- fetch("paleomap", "paleoatlas")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+```{r}
+paleoras <- fetch(dat = "paleomap", var = "paleoatlas", dir, verbose=FALSE)
 
 ```
 

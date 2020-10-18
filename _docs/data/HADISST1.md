@@ -10,12 +10,26 @@ HadISST1 is the the Met Office Hadley Centre's sea ice and sea surface temperatu
 
 sst - Sea Surface Temperature.
 
+The dataset downloaded from [here](https://www.metoffice.gov.uk/hadobs/hadisst/).
+
 This dataset requires the 'ncdf4' package to load.
 
 Access the sea surface temperature variable ("sst") of the "HadISST1" dataset with a `fetch()` function:
 
 ```{r}
  maps <- fetch("HadISST1", "sst")
+
+```
+#### Additional arguments
+
+The argument `dir` represents the path to temporary directory. 
+
+The argument `verbose` (logical) determines should feedback be output to the console?
+
+The argument `na` is a logical flag to trigger the removal of placeholder values - it also forces the dataset in the memory.
+
+```{r}
+maps <- fetch(dat = "HadISST1", var = "sst", dir, verbose=FALSE, na = TRUE)
 
 ```
 
