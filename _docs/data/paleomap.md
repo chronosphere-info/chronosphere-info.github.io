@@ -183,9 +183,8 @@ paleopc <- fetch(dat = "paleomap", var = "adminlines", dir, verbose=FALSE)
 
 #### Archive size
 
-paleomap_paleoatlas_20160216v3_0.5: 52.4 MB
 
-paleomap_paleoatlas_20160216v3_0.1: 6.04 MB
+paleomap_adminlines_19.0.zip: 5.3 MB
 
 #### Version
 
