@@ -21,7 +21,7 @@ The dataset downloaded from [here](https://www.earthbyte.org/webdav/ftp/earthbyt
 
 The dataset downloaded from [here](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/).
 
-[adminlines - Present-day administrative boundaries for the PaleoMAP project](Present-day-dministrative-boundaries-for-the-PaleoMAP-project)
+[adminlines - Present-day administrative boundaries for the PaleoMAP project](present-day-administrative-boundaries-for-the-paleomap-project)
 
 Personal communication from C. Scotese.
 
