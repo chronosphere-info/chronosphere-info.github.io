@@ -21,7 +21,7 @@ The dataset downloaded from [here](https://www.earthbyte.org/webdav/ftp/earthbyt
 
 The dataset downloaded from [here](https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/).
 
-[adminlines - Present-day administrative boundaries for the PaleoMAP project](present-day-administrative-boundaries-for-the-paleomap-project)
+[adminlines - Administrative boundaries for the PaleoMAP project](administrative-boundaries-for-the-paleomap-project)
 
 Personal communication from C. Scotese.
 
@@ -163,7 +163,7 @@ paleomap_paleoatlas_20160216v3_0.1: 6.04 MB
 [CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/2.0/)
 
 
-### Present-day administrative boundaries for the PaleoMAP project
+### Administrative boundaries for the PaleoMAP project
 
 Present-day administrative boundaries and coastlines used as reference in reconstructed maps. The loaded data have the class `SpatialLinesDataFrame`, which can be rotated back in time using the reconstruct() function. 
 
