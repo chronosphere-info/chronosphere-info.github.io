@@ -11,6 +11,7 @@
 
 - title: Data documentation
   docs:
+  - CoralTraitDB
   - ETOPO1
   - GPlates
   - HadISST1
