@@ -2,7 +2,7 @@
 title: Biodiversity Hotspots - Myers et al. (Myers-hotspots)
 permalink: /docs/Myers-hotspots/
 ---
-Biodiversity hotspots based on the origin work of Myers et al. 2000. 
+Biodiversity hotspots based on the study of Myers et al. (2000). 
 
 
 ### Available variables 
@@ -28,7 +28,7 @@ The shapefile contains both the actual hotspot areas and their limits of patches
 Access the (default) "Outer limits and hotspot areas" variable (`"both"`) of the `"Myers-hotspots"` dataset with the `fetch()` function:
 
 ```{r}
- maps <- fetch("Myers-hotspots")
+myers <- fetch("Myers-hotspots")
 
 ```
 #### Additional arguments
