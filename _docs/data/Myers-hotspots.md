@@ -38,7 +38,7 @@ The argument `dir` represents the path to temporary directory.
 The argument `verbose` (logical) determines should feedback be output to the console?
 
 ```{r}
-maps <- fetch(dat = "Myers-hotspots", var = "both", dir, verbose=FALSE)
+myers <- fetch(dat = "Myers-hotspots", var = "both", ver="2016.1", verbose=FALSE)
 
 ```
 
@@ -73,7 +73,7 @@ The argument `dir` represents the path to temporary directory.
 The argument `verbose` (logical) determines should feedback be output to the console?
 
 ```{r}
-maps <- fetch(dat = "Myers-hotspots", var = "hotspot-area", dir, verbose=FALSE)
+areas <- fetch(dat = "Myers-hotspots", var = "hotspot-area", ver="2016.1", verbose=FALSE)
 
 ```
 
@@ -107,7 +107,7 @@ The argument `dir` represents the path to temporary directory.
 The argument `verbose` (logical) determines should feedback be output to the console?
 
 ```{r}
-maps <- fetch(dat = "Myers-hotspots", var = "outer-limit", dir, verbose=FALSE)
+limits <- fetch(dat = "Myers-hotspots", var = "outer-limit", dir, verbose=FALSE)
 
 ```
 
