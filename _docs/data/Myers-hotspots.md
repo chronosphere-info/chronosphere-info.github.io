@@ -7,7 +7,7 @@ Biodiversity hotspots based on the origin work of Myers et al. 2000.
 
 ### Available variables 
 
-[both - Outer limits and hotspot areas](#outer-limits-and-hotspots-areas)
+[both - Outer limits and hotspot areas](#outer-limits-and-hotspot-areas)
 
 The dataset downloaded from [here](https://zenodo.org/record/3261807).
 
@@ -22,7 +22,8 @@ The dataset downloaded from [here](https://zenodo.org/record/3261807).
 	
 ### Outer limits and hotspot areas
 
-Terrestrial biodiversity hotspots originally defined using floral endemism and habitat destruction (Myers et al. 2000). The shapefile contains both the actual hotspot areas and their limits of patches dispersed over multiple islands. Previous versions will be incorporated on demand. See https://zenodo.org/record/3261807 for changes since the original original version.
+Terrestrial biodiversity hotspots originally defined using floral endemism and habitat destruction (Myers et al. 2000). 
+The shapefile contains both the actual hotspot areas and their limits of patches dispersed over multiple islands. Previous versions will be incorporated on demand. See https://zenodo.org/record/3261807 for changes since the original original version.
 
 Access the (default) "Outer limits and hotspot areas" variable (`"both"`) of the `"Myers-hotspots"` dataset with the `fetch()` function:
 
@@ -55,11 +56,11 @@ maps <- fetch(dat = "Myers-hotspots", var = "both", dir, verbose=FALSE)
 [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/)
 
 
-### Hotspot area shapes
+### Hotspot areas
 
 Actual hotspot areas. A subset of the `"both"` variable
 
-Access the (default) "Hotspot area shapes" variable (`"hotspot-area"`) of the `"Myers-hotspots"` dataset with the `fetch()` function:
+Access the (default) "Hotspot areas" variable (`"hotspot-area"`) of the `"Myers-hotspots"` dataset with the `fetch()` function:
 
 ```{r}
  maps <- fetch("Myers-hotspots", var="hotspot-area")
