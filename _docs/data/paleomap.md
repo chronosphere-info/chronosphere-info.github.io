@@ -116,7 +116,7 @@ v19o_r1c
 #### Licence
 
 
-[CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+[CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 ### PaleoAtlas paleorasters
 
@@ -160,7 +160,7 @@ paleomap_paleoatlas_20160216v3_0.1: 6.04 MB
 #### Licence
 
 
-[CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+[CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 
 ### Administrative boundaries for the PaleoMAP project
@@ -197,7 +197,7 @@ paleomap_adminlines_19.0.zip: 5.3 MB
 #### Licence
 
 
-[CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+[CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 
 ### PaleoMAP PaleoCoastlines
@@ -238,7 +238,7 @@ v7
 #### Licence
 
 
-[CC-BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/2.0/)
+[CC-BY](https://creativecommons.org/licenses/by/4.0/)
 
 
 
