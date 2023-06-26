@@ -15,6 +15,6 @@
 - name: Clients 
   dropdown:
    - name: R package 
-     link: https://www.chronosphere-portal.org/r_client/
+     link: https://chronosphere.info/r_client/
 - name: Evolv-ED 
   link: https://evolv-ed.net
