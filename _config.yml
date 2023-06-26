@@ -22,7 +22,7 @@ title: chronosphere
 email: adam.t.kocsis@gmail.com
 description: Evolving Earth System Data
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chronosphere.info" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  chronosphere-info
 
