@@ -1,0 +1,20 @@
+- name: About
+  dropdown:
+  - name: Why?  
+    link: /about/iral/
+  - name: People  
+    link: /about/iral/
+- name: Model
+  dropdown:
+   - name: Data Model 
+     link: /model/
+   - name: Back-end
+     link: /data/back-end/
+- name: Data
+  link: /data/
+- name: Clients 
+  dropdown:
+   - name: R package 
+     link: https://www.chronosphere-portal.org/r_client/
+- name: Evolv-ED 
+  link: https://evolv-ed.net
