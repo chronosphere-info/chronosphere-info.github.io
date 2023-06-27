@@ -1,8 +1,8 @@
 <nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
     <div class="container">
         <div class="navbar-brand">
-            <a href="{{ site.baseurl }}/" class="navbar-item">
-              <img src="{{site.url}}{{site.baseurl}}/images/chronosphere/chronosphere_luminosity_500_hover.png" style="margin-right:5px" height="30px" width="30px">
+            <a id="brand-name" href="{{ site.baseurl }}/" class="navbar-item">
+              <img id="brand-logo" src="{{site.url}}{{site.baseurl}}/images/chronosphere/chronosphere_luminosity_500_hover.png" height="30px" width="30px">
                 {{ site.title }}
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
