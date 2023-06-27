@@ -631,15 +631,15 @@ a.box:active { box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #485
 
 .container.is-fluid { max-width: none !important; padding-left: 32px; padding-right: 32px; width: 100%; }
 
-@media screen and (min-width: 1024px) { .container { max-width: 960px; } }
+@media screen and (min-width: 1024px) { .container { max-width: 924px; } }
 
-@media screen and (max-width: 1215px) { .container.is-widescreen:not(.is-max-desktop) { max-width: 1152px; } }
+@media screen and (max-width: 1215px) { .container.is-widescreen:not(.is-max-desktop) { max-width: 1116px; } }
 
-@media screen and (max-width: 1407px) { .container.is-fullhd:not(.is-max-desktop):not(.is-max-widescreen) { max-width: 1344px; } }
+@media screen and (max-width: 1407px) { .container.is-fullhd:not(.is-max-desktop):not(.is-max-widescreen) { max-width: 1308px; } }
 
-@media screen and (min-width: 1216px) { .container:not(.is-max-desktop) { max-width: 1152px; } }
+@media screen and (min-width: 1216px) { .container:not(.is-max-desktop) { max-width: 1116px; } }
 
-@media screen and (min-width: 1408px) { .container:not(.is-max-desktop):not(.is-max-widescreen) { max-width: 1344px; } }
+@media screen and (min-width: 1408px) { .container:not(.is-max-desktop):not(.is-max-widescreen) { max-width: 1308px; } }
 
 .content li + li { margin-top: 0.25em; }
 
@@ -4000,6 +4000,20 @@ div.highlight { margin-bottom: 1rem; }
 .highlight .w { color: #bbbbbb; }
 
 .highlight { background-color: #f8f8f8; }
+
+div.navbar-brand { font-size: 1.25em; margin-right: 170px; }
+
+div.navbar-start { font-size: 18px; }
+
+a.navbar-link { padding-top: 0.9em; padding-bottom: 0.9em; }
+
+img#brand-logo { margin-left: 6px; margin-right: 8px; margin-top: 5px; }
+
+.navbar-item img { max-height: 2rem; }
+
+a#brand-name { padding-bottom: 0.55em; }
+
+a.navbar-link:hover { color: #ff0000; }
 
 .showcase { margin-bottom: 3rem; box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02); }
 
