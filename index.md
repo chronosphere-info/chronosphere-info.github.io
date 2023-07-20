@@ -1,10 +1,21 @@
 ---
 layout: page
 title: chronosphere 
-subtitle: Evolving Earth System Data
+subtitle: Evolving Earth System Variables
 callouts: landing_callout
 ---
 
+<section class="section has-background-light" markdown="1">
+# Versioning of data (dark)
+
+</section>
+
+<section class="section" markdown="1">
+# Versioning of data
+
+</section>
+
+<section class="section has-background-light" markdown="1">
 # chronosphere
 
 Summary
@@ -13,7 +24,7 @@ Summary
 - Number of databases
 - Number of variables
 
-# Versioning of data
+</section>
 
 # Public data
 

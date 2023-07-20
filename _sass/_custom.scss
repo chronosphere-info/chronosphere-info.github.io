@@ -1,6 +1,11 @@
+@media screen and (min-width: 1024px){
+	div.navbar-brand{
+		margin-right:170px;
+	}
+
+}
 div.navbar-brand{
 	font-size:1.25em;
-	margin-right:170px;
 				 
 }
 div.navbar-start{
@@ -8,7 +13,7 @@ div.navbar-start{
 }
 a.navbar-link{
 	padding-top:0.9em;
-	padding-bottom:0.9em;
+	padding-bottom:0.86em;
 }
 
 img#brand-logo{
@@ -25,7 +30,9 @@ a#brand-name{
 	padding-bottom:0.55em
 
 }
-a.navbar-link:hover{
-	color:#ff0000;
+
+i.fab.fa-github{
+	font-size:25px
 
 }
+

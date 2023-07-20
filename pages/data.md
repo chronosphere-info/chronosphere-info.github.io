@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Accessible Data 
+title: Available data 
 menubar: data_categ
 permalink: /data/
 ---

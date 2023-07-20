@@ -6,15 +6,19 @@
     link: /about/iral/
 - name: Model
   dropdown:
-   - name: Data Model 
-     link: /model/
-   - name: Back-end
-     link: /data/back-end/
+   - name: Datasets 
+     link: /model/datasets/
+   - name: Variables 
+     link: /model/variables/
+- name: Use cases
+  dropdown:
+   - name: Result tracing 
+     link: /uses/
 - name: Data
   link: /data/
 - name: Clients 
   dropdown:
    - name: R package 
      link: https://chronosphere.info/r_client/
-- name: Evolv-ED 
-  link: https://evolv-ed.net
+- name: Contact 
+  link: /contact/
