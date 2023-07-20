@@ -21,12 +21,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>chronosphere | Evolving Earth System Data</title>
+<title>chronosphere | Evolving Earth System Variables</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="chronosphere" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Evolving Earth System Data" />
-<meta property="og:description" content="Evolving Earth System Data" />
+<meta name="description" content="Evolving Earth System Variables" />
+<meta property="og:description" content="Evolving Earth System Variables" />
 <link rel="canonical" href="https://chronosphere.info/" />
 <meta property="og:url" content="https://chronosphere.info/" />
 <meta property="og:site_name" content="chronosphere" />
@@ -34,7 +34,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="chronosphere" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Evolving Earth System Data","headline":"chronosphere","name":"chronosphere","url":"https://chronosphere.info/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Evolving Earth System Variables","headline":"chronosphere","name":"chronosphere","url":"https://chronosphere.info/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -80,9 +80,20 @@
                         <a href="" class="navbar-link ">Model</a>
                         <div class="navbar-dropdown">
                             
-                            <a href="/model/" class="navbar-item ">Data Model</a>
+                            <a href="/model/datasets/" class="navbar-item ">Datasets</a>
                             
-                            <a href="/data/back-end/" class="navbar-item ">Back-end</a>
+                            <a href="/model/variables/" class="navbar-item ">Variables</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Use cases</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/uses/" class="navbar-item ">Result tracing</a>
                             
                         </div>
                     </div>
@@ -104,7 +115,7 @@
                     
                 
                     
-                    <a href="https://evolv-ed.net" class="navbar-item ">Evolv-ED</a>
+                    <a href="/contact/" class="navbar-item ">Contact</a>
                     
                 
                 
@@ -112,6 +123,18 @@
 
             <div class="navbar-end">
                 
+
+                <a class="navbar-item" href="https://evolv-ed.net">
+				  <span>Evolv-ED</span>
+                </a>
+				<div class="navbar-item">
+					<form action="/search/" method="get">
+						<input class="input is-small" type="text" name="q" placeholder="Search for">
+					</form>
+				</div>
+                <a class="navbar-item" href="https://github.com/chronosphere-info">
+                   <i class="fab fa-github"></i>
+                </a>
             </div>
 
         </div>
@@ -125,11 +148,11 @@
 		  <div class="columns is-vcentered">
 			<div class="column is-7">
 			  <h1 class="title is-2">chronosphere</h1>
-			  <p class="subtitle is-3">Evolving Earth System Data</p>
+			  <p class="subtitle is-3">Evolving Earth System Variables</p>
 			  
 			</div>
 			<div class="column is-2">
-			  <a href="https://chronosphere.info"><img src="https://chronosphere.info/images/chronosphere/chronosphere_1000x1000.png" width="200px"></a>
+			  <a href="https://chronosphere.info"><img src="https://chronosphere.info/images/chronosphere/chronosphere_trial.png" width="200px"></a>
 			</div>
 			</div>
         </div>
@@ -148,18 +171,18 @@
                             
                             <div class="icon callout-icon">
                             
-                                <i class="fas fa-space-shuttle fa-4x"  style="color:#00ff00"></i>
+                                <i class="fas fa-download fa-4x"  style="color:#4c9ae9"></i>
                             
                             </div>
                             
-                            <p class="title is-5">FAIR</p>
-                            <p class="subtitle is-5">Example subtitle 1</p>
+                            <p class="title is-5">Download data items</p>
+                            <p class="subtitle is-5">Direct access</p>
                             
                             
 
                             
-                            <a href="/page-1/" class="button is-primary">
-                                Call to action 1
+                            <a href="https://chronosphere.info/r_client/" class="button is-primary">
+                                Explore Data Model
                             </a>
                             
                         </div>
@@ -168,18 +191,18 @@
                             
                             <div class="icon callout-icon">
                             
-                                <i class="fas fa-wrench fa-4x"  style="color:#00ff00"></i>
+                                <i class="fas fa-route fa-4x"  style="color:#4c9ae9"></i>
                             
                             </div>
                             
-                            <p class="title is-5">Example callout 2</p>
-                            <p class="subtitle is-5">Example subtitle 2</p>
+                            <p class="title is-5">Tracing Data Evolution</p>
+                            <p class="subtitle is-5">Direct</p>
                             
                             
 
                             
                             <a href="/page-2/" class="button is-primary">
-                                Call to action 2
+                                Why?
                             </a>
                             
                         </div>
@@ -188,18 +211,18 @@
                             
                             <div class="icon callout-icon">
                             
-                                <i class="fab fa-github fa-4x" style="color:#00ff00"></i>
+                                <i class="fas fa-globe fa-4x"  style="color:#4c9ae9"></i>
                             
                             </div>
                             
-                            <p class="title is-5">Data</p>
-                            <p class="subtitle is-5">Example subtitle 3</p>
+                            <p class="title is-5">Variables</p>
+                            <p class="subtitle is-5">Systematics of data</p>
                             
                             
 
                             
-                            <a href="/page-3/" class="button is-primary">
-                                Call to action 3
+                            <a href="/data/" class="button is-primary">
+                                Available data
                             </a>
                             
                         </div>
@@ -222,17 +245,28 @@
                     
                     
 <div class="content">
-    <h1 id="chronosphere">chronosphere</h1>
+    <section class="section has-background-light">
+  <h1 id="versioning-of-data-dark">Versioning of data (dark)</h1>
 
-<p>Summary</p>
+</section>
 
-<ul>
-  <li>Number of items</li>
-  <li>Number of databases</li>
-  <li>Number of variables</li>
-</ul>
+<section class="section">
+  <h1 id="versioning-of-data">Versioning of data</h1>
 
-<h1 id="versioning-of-data">Versioning of data</h1>
+</section>
+
+<section class="section has-background-light">
+  <h1 id="chronosphere">chronosphere</h1>
+
+  <p>Summary</p>
+
+  <ul>
+    <li>Number of items</li>
+    <li>Number of databases</li>
+    <li>Number of variables</li>
+  </ul>
+
+</section>
 
 <h1 id="public-data">Public data</h1>
 

@@ -4001,11 +4001,13 @@ div.highlight { margin-bottom: 1rem; }
 
 .highlight { background-color: #f8f8f8; }
 
-div.navbar-brand { font-size: 1.25em; margin-right: 170px; }
+@media screen and (min-width: 1024px) { div.navbar-brand { margin-right: 170px; } }
+
+div.navbar-brand { font-size: 1.25em; }
 
 div.navbar-start { font-size: 18px; }
 
-a.navbar-link { padding-top: 0.9em; padding-bottom: 0.9em; }
+a.navbar-link { padding-top: 0.9em; padding-bottom: 0.86em; }
 
 img#brand-logo { margin-left: 6px; margin-right: 8px; margin-top: 5px; }
 
@@ -4013,7 +4015,7 @@ img#brand-logo { margin-left: 6px; margin-right: 8px; margin-top: 5px; }
 
 a#brand-name { padding-bottom: 0.55em; }
 
-a.navbar-link:hover { color: #ff0000; }
+i.fab.fa-github { font-size: 25px; }
 
 .showcase { margin-bottom: 3rem; box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02); }
 

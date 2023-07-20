@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Search results | chronosphere</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Search results" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Evolving Earth System Variables" />
+<meta property="og:description" content="Evolving Earth System Variables" />
+<link rel="canonical" href="https://chronosphere.info/search/" />
+<meta property="og:url" content="https://chronosphere.info/search/" />
+<meta property="og:site_name" content="chronosphere" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Search results" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Evolving Earth System Variables","headline":"Search results","url":"https://chronosphere.info/search/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts -->
+  <script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+</head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a id="brand-name" href="/" class="navbar-item">
+              <img id="brand-logo" src="https://chronosphere.info/images/chronosphere/chronosphere_luminosity_500_hover.png" height="30px" width="30px">
+                chronosphere
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+
+                
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">About</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/about/iral/" class="navbar-item ">Why?</a>
+                            
+                            <a href="/about/iral/" class="navbar-item ">People</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Model</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/model/datasets/" class="navbar-item ">Datasets</a>
+                            
+                            <a href="/model/variables/" class="navbar-item ">Variables</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Use cases</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/uses/" class="navbar-item ">Result tracing</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/data/" class="navbar-item ">Data</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Clients</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="https://chronosphere.info/r_client/" class="navbar-item ">R package</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/contact/" class="navbar-item ">Contact</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+
+                <a class="navbar-item" href="https://evolv-ed.net">
+				  <span>Evolv-ED</span>
+                </a>
+				<div class="navbar-item">
+					<form action="/search/" method="get">
+						<input class="input is-small" type="text" name="q" placeholder="Search for">
+					</form>
+				</div>
+                <a class="navbar-item" href="https://github.com/chronosphere-info">
+                   <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+		  <div class="columns is-vcentered">
+			<div class="column is-7">
+			  <h1 class="title is-2">Search results</h1>
+			  <p class="subtitle is-3"></p>
+			  
+			</div>
+			<div class="column is-2">
+			  <a href="https://chronosphere.info"><img src="https://chronosphere.info/images/chronosphere/chronosphere_trial.png" width="200px"></a>
+			</div>
+			</div>
+        </div>
+    </div>
+</section>
+
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    
+<div class="content">
+    <script src="https://chronosphere.info/assets/js/lunr.js"></script>
+
+<script>
+
+var documents = [{
+    "id": 0,
+    "url": "https://chronosphere.info/404.html",
+    "title": "",
+    "body": " 404 Page not found :(  The requested page could not be found. "
+    }, {
+    "id": 1,
+    "url": "https://chronosphere.info/about/iral/",
+    "title": "About",
+    "body": "About the organizationNaturally arose from the similar goals of Paleosynthesis projects. "
+    }, {
+    "id": 2,
+    "url": "https://chronosphere.info/data/",
+    "title": "Available data",
+    "body": "The data items of the chronosphere. "
+    }, {
+    "id": 3,
+    "url": "https://chronosphere.info/model/datasets/",
+    "title": "Datasets",
+    "body": "Structure1. Data Items: Items represent the lowest-level entities of the chronosphere framework. A data item is a programming object-level representation of a dataset with a definite structure, i. e. a programming class. Users (i. e. researchers or analysts) interact with items. Items are imported by a client, which executes some code that instantiates the object. They are typically read in from data files and/or structured by some code that is assigned to item. A programming class and some code is always mapped to an item, and data files can be. 2. Data Products: Although items represent the basic technical units, the fundamental semantic entity of the chronosphere is the data product. The product represents colloquial “data” that represent a certain amount of information: it does not matter whether a . csv or . parquet file is used to store the same data or whether it is present in the form of a Pandas. DataFrame or an R data. table. If the content is the same, all represent the same data product. Data products have well-defined boundaries in terms of content, size and meaning. The abtract data products are always manifeested in an item. Represent the state-of-the-art at a given point in time and can always be assigned to a date of finalization publication, and or a version identifier. They can also be altered in slight ways fo fulfil a specific function (e. g. resolution). 3. Data Series: Series are a set of products that are derived using specific rules - in many cases with the same programming pipeline, which applied to an updated set of data to create a specific data product. Examples include database API calls that compile the same table structure from the most up-to-date state of a database (such as series from the Paleobiology Database), and named data products that are released at either regular or irregular intervals. Products within the same series are expected to have the same overall structure, but different content. The definition of series has been one of the primary goals of the chronosphere: it allows the quick substitution of differently-versioned products of the same series, which is a technical prerequisite to tracing scientific results through time in the face of changing data. 4. Data Sources: Sources are either formal or informal entites that can be tied data structures. This level of hierarchy helps with organizing information and finding information that can be tied to an organization, a database or a scientific paper. UseItems can be located by referring to its coordinates - usually from top- to lower-level of hierarchy. Shorthands are used to identify items.       Coordinate       example         Source               Series               Product               item           "
+    }, {
+    "id": 4,
+    "url": "https://chronosphere.info/blog/",
+    "title": "Blog",
+    "body": ""
+    }, {
+    "id": 5,
+    "url": "https://chronosphere.info/",
+    "title": "chronosphere",
+    "body": " Versioning of data (dark) Versioning of data chronosphere Summary    Number of items  Number of databases  Number of variables Public data access data from published repositories"
+    }, {
+    "id": 6,
+    "url": "https://chronosphere.info/paleodb/",
+    "title": "Paleobiology Database",
+    "body": "Paleobiology Databasedat: pbdb "
+    }, {
+    "id": 7,
+    "url": "https://chronosphere.info/search/",
+    "title": "Search results",
+    "body": "{% include search-lunr. html %} "
+    }, {
+    "id": 8,
+    "url": "https://chronosphere.info/model/variables/",
+    "title": "Variables",
+    "body": "A variable is a function that maps one type of information to another. The blueprint of a variable is its dimensionality: the dimensions of its domain (to what it maps things) and its range (what it maps). The entire Earth system can represented with a set of variables or system descriptors. Examples: Seawater temperature (atmosphere): Seawater Temperature is a variable that maps a single value (range: °K), to four dimensions (domain: longitude, latitude, elevation and absolute time).  HADIsst1 IPCC AR6 WG1 Atlas - CMIP6 BRIDGE climate dataGlobal richness of genera (biosphere): This variable (range: # of genera), domain (absolute time, set of organisms).  Sepkoski’s genus level diversity curvesRelationship to data items: The basic idea of the chronosphere is that every data product can be described as a manifestation of a variable, i. e. it becomes a value that it takes. We can trace how our understanding of the Earth System evolves in a secondary (knowledge) time dimension. "
+    }, {
+    "id": 9,
+    "url": "https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll.html",
+    "title": "Welcome to Jekyll!",
+    "body": "2023/03/27 - You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated. Jekyll requires blog post files to be named according to the following format: YEAR-MONTH-DAY-title. MARKUP Where YEAR is a four-digit number, MONTH and DAY are both two-digit numbers, and MARKUP is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works. Jekyll also offers powerful support for code snippets: def print_hi(name) puts  Hi, #{name} endprint_hi('Tom')#=&gt; prints 'Hi, Tom' to STDOUT. Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk. "
+    }, {
+    "id": 10,
+    "url": "https://chronosphere.info/2021/10/30/creating-a-post-series.html",
+    "title": "Creating a post series",
+    "body": "2021/10/30 - From version 0. 12, you can now make a post a part of a series of posts, linking to the other posts in the series, by creating a series data file and then setting the series in each of the post’s front matter. The current post in the list is highlighted to help give context of where you are in the series. Blog Series Data File: Start by creating a yml file in the _data directory, for example my_blog_series. yml. Give the series a title and, optionally, a description. Sections: Next add sections. Each section can have a label (optional) and items. Each item is the title of an existing blog post. If the title is not found then the link will be empty. If you just want one list without labels, then omit the label and just add the items. title: The series titlesections: - items:   - title: Why use a static site generator   - title: Getting started with Bulma Clean Theme for JekyllHere is a full example with multiple sections with labels. title: The series titledescription: The series description textsections: - label: The first section  items:   - title: Why use a static site generator   - title: Getting started with Bulma Clean Theme for Jekyll - label: Another section  items:   - title: Introducing some new layouts to Bulma Clean Theme   - title: Creating a docs site with Bulma Clean Theme   - title: Creating a post seriesUpdate your posts: Finally, add the series setting to your front matter in each post you want the series to show in. series: my_blog_series"
+    }, {
+    "id": 11,
+    "url": "https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html",
+    "title": "Creating a docs site with Bulma Clean Theme",
+    "body": "2020/05/08 - I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project. GitHub Pages Configuration: GitHub pages allows you to create a website for your project with free hosting. Go to your repo on GitHub, then click Settings, then scroll down to the GitHub Pages section. You have the option to create a site from the root of your master branch of from the /docs directory in your master branch. For this example, we are going to use the /docs directory. Don’t change this setting just yet as if you don’t have a docs directory there will be nothing there to publish. Creating the docs directory: Clone your git repo to a local directory, let’s say ~/code/my-project for this example. The below assumes you don’t yet have a docs directory and you have jekyll installed. If you do already have a docs directory you will have to rename it to something else. Create a new jekyll installation in the docs directory, ensuring you replace your username and project name in the below example. git clone https://github. com/username/my-project. git ~/code/my-projectcd ~/code/my-projectjekyll new docsYou should now have a base install of Jekyll in your freshly created docs directory. Configuring the theme:  Replace everything in the Gemfile with the following  source 'https://rubygems. org'gem  bulma-clean-theme , '0. 7. 2'gem 'github-pages', group: :jekyll_plugins    Open the _config. yml and comment out or delete the line theme: minima and replace it with remote_theme: chrisrhymes/bulma-clean-theme, then add github-pages to the list of plugins. Update the baseurl to your GitHub repo name, in this example we are using my-project as the repo name  #theme: minimaremote_theme: chrisrhymes/bulma-clean-themebaseurl:  /my-project plugins:- github-pages    Open the index. md file and update the front matter so the layout is page and then add a title  layout: pagetitle: Docs for My Project      Run bundle install and then bundle exec jekyll serve   Visit http://localhost:4000/my-project/ to view your new docs page. Menu: To create a menu on the left on your docs page you need to create a new yaml file in _data directory, such as menu. yaml and then use the below format, where the label will be the menu title and the items are the menu items. Each menu item can have a list of sub menu items if needed. - label: Example Menu items:  - name: Menu item   link: /link/   items:    - name: Sub menu item      link: /sub-menu-item/Table of contents: If you would like auto generated table of contents for your docs page then add toc: true to the page’s front matter. The table of contents works for markdown pages and loops through the heading 2s and heading 3s in the markdown and then auto generates the contents. GitHub Sponsors: If you want to link to your GitHub sponsors profile then add gh_sponsor with your username to the _config. yml file. gh_sponsor: chrisrhymesMaking the docs page live: Once you have finished creating your docs page you can commit your changes and push everything up to GitHub. Go back to the GitHub settings page and scroll back down to the GitHub Pages section. Now we can update the setting to use the Master branch /docs folder and then GitHub will build your new docs page. Want to see an example?: I recently updated one of my own packages to use Bulma Clean Theme to power the docs page. Check out the docs for Bulma Block List as an example. "
+    }, {
+    "id": 12,
+    "url": "https://chronosphere.info/2019/07/23/introducing-some-new-layouts-to-bulma-clean-theme.html",
+    "title": "Introducing some new layouts to Bulma Clean Theme",
+    "body": "2019/07/23 - I’ve been meaning to write about some of the new features I have been rolling out to my Jekyll theme, Bulma Clean Theme, for a while but I have only just managed to push the update for the landing page layout last weekend. This article provides some of the thinking behind the updates, as well as a brief introduction to how to get started. Product Pages: I use the theme to power my own personal website and decided that it would be good to update my book pages, or book page as it was then. The page had used a very simple layout with both books on one page and was not really up to scratch. I decided it would be better to make each book its own page, and if I ever get round to it and write another book it would be easy to add another to the site in the future. Rather than just building these pages for my own site, I thought it would be a nice addition to the base theme. I really like Jekyll as it is simple to use, but also very powerful. I decided to make the most of the frontmatter and allow you to set most of the product information in there, leaving the main content of the page for the text description. To get started, create your product pages inside a _products directory as we will make use of collections later on. The below is an example of the frontmatter for the product page. The product page uses the same hero, title and subtitle settings as other pages, but has additional settings for product code, image, price, rating and features. The product code is important for later on. ---title: Product 1 Namesubtitle: Product 1 tagline heredescription: This is a product descriptionhero_image: /img/hero-img. jpgproduct_code: ABC124layout: productimage: https://via. placeholder. com/640x480price: £1. 99 + VATfeatures:  - label: Great addition to any home   icon: fa-location-arrow  - label: Comes in a range of styles   icon: fa-grin-stars  - label: Available in multiple sizes   icon: fa-fighter-jetrating: 3---The features provides a way of making a bullet point list of the key product features, but instead of plain disc bullet points you can use font awesome icons to make it a bit more interesting. I don’t know about you, but sometimes I spend longer deciding on what icon to use than making the rest of the page. I’ve deliberately made the product pages have a 4 by 3 image ratio as I feel it works best across different screen sizes. Like all themes, if you want to change it you can override the default layouts if you want a different ratio. Once you have created your product pages, you will need to tell Jekyll to output them. This is done by adding collections settings in the _config. yml for your site. collections: products:   output: true  layout: product  image: https://via. placeholder. com/800x600  show_sidebar: falseNow when you run jekyll build it will output a load of product pages for you, now we just need a way of getting to them. This is where the product category page comes in. Product Category: Create a page, such as products. md or in my case books. md and set it to use the product-category layout. This will generate a list of the products, but you can also add some introduction content in the main content section of the page if you so desire. ---title: Productssubtitle: Check out our range of productslayout: product-categoryshow_sidebar: falsesort: title---This is some page content and it will appear above the product list. Product Reviews: The last addition to the product pages is reviews. If you would like to list some customer reviews on your product pages, then you will need to create a reviews directory inside _data and create a separate file for each product with reviews, named after the product code. For example _data/reviews/ABC124. yml The data file should follow the below format. The name is the customer name, the rating is how many stars out of 5, the title is the main title of the review and the avatar is a link to an image, if you have one. If you don’t have a customer image then just omit it and a user icon will be used instead. Lastly, the description is the main content of the review. - name: Mr E Xample rating: 4 title: Great product, highly recommended date: 01/01/2019 avatar: https://bulma. io/images/placeholders/128x128. png description: &gt;  The product worked really well. I would recommend this to most people to use. Delivery was quick and reasonable.   Would recommend this to my friends. - name: Mrs R E View rating: 5 title: Nice, really liked this date: 02/02/2019 description: &gt;  The product worked exactly as described. Example product category and product pages can be seen on the theme’s demo site here if you want to take a look. Landing Page Layout: I was thinking it would be good to create a landing style page so I could highlight a new project or something I was working on separately from the main projects page already on my site. Rather than create a new layout I thought it would be better to enhance the existing page layout so you could choose to use these features if you so desired. I started by adding a call to action (otherwise known as a large button) in the hero at the top of the page. This can be used by adding hero_link and hero_link_text to the frontmatter. ---layout: pagetitle: Example Landing Pagesubtitle: This is an example landing page with calloutshero_height: is-largehero_link: /page-1/hero_link_text: Example Call To Action---Next, I wanted to make some nice callouts to help shout about key features of whatever you are talking about on your landing page. This started out as a simple icon and a title, but slowly evolved to allow for a subtitle, description text and a call to action button as well. To make it more flexible, only the title and subtitle are required and the rest can be used as and when necessary. To make the callouts reusable in different pages on your site, the content is defined in a datafile, for example, example_callouts. yml. The below shows the example structure for the callouts. style: is-lightitems: - title: Example callout 1  subtitle: Example subtitle 1  icon: fa-space-shuttle  description: &gt;   The example description text goes here and can be multiple lines.    For example, such as this.   call_to_action_name: Call to action 1  call_to_action_link: /page-1/The style is the style of the hero that the callouts are contained in. This makes use of Bulma hero styles. Then to display the callouts on the page, add a callouts setting to the pages frontmatter with the name of the data file without the extension. ---layout: pagetitle: Example Landing Pagesubtitle: This is an example landing pagecallouts: example_callouts---An example landing page layout can be seen in the theme’s demo site. What do you think?: I’ve tried to make these additions easy to use and flexible where possible. I’ve updated the readme file and the theme demo site with more information to help you get started with these new features. If you decide to give the theme a go, it would be great to see how you are using it and if you have any ideas of how it can be developed further. You never know, if I get enough responses then I may even make a showcase page on the demo theme site to highlight how others are using it. "
+    }, {
+    "id": 13,
+    "url": "https://chronosphere.info/development/2019/02/09/getting-started-with-bulma-clean-theme.html",
+    "title": "Getting started with Bulma Clean Theme for Jekyll",
+    "body": "2019/02/09 - I have made a theme for Jekyll which is based on the Bulma frontend framework. It might look familiar, because I am also using it for this site. If you like the look of this theme then I thought I would write a little blog post about how to use it for your own site and how you can use it with GitHub Pages. Getting started: First things first, you need a local instance of Jekyll running on your computer. I’m assuming you are familiar with Jekyll and have everything you need installed. If this is not the case, check out the documentation on the Jekyll website. For this example, lets call the site myblog. Create a new installation of Jekyll, then go into the myblog directory: jekyll new myblogcd myblogThen add the theme to the Gemfile: gem  bulma-clean-theme Then add the theme to your _config. yml: theme: bulma-clean-themeThen run bundle to install everything bundleYou can then preview your site by running the usual command bundle exec jekyll serveCreating pages: A page can either be a html or a markdown file, as long as you set the frontmatter. There are a few settings that pages can use to customise the default theme a bit further if you so choose. ---layout: pagetitle: Page Titlesubtitle: Page Subtitleimage: /path/to/image. jpgdescription: The pages meta descriptionhero_image: /path/to/hero-image. jpghero_height: is-fullheight---If you don’t set a subtitle, image, hero_image or hero_height then defaults will be used or in the case of the hero_image, no image will be used on the hero. The theme uses the jekyll-seo-tag plugin so it will use the information you provide in the frontmatter to auto populate the meta tags and open graph tags. Posts: Posts are created as per the standard Jekyll method, in a _posts directory, with each post named YYYY-MM-DD-name-of-post. markdown. For the post frontmatter you can use the same settings as a page, except you need to change the layout to post and add date and author settings. Blog page: For the blog homepage, create a blog. html page with layout: blog and use the other settings from a normal page. The theme is set up to use jekyll-paginate so you just need to add pagination options to your _config. yml # Pagination settingspaginate: 5paginate_path:  /blog/page:num Site defaults: If you don’t want to set each hero_image individually, then you can set default values in your _config. yml. The below example sets a default author, layout and hero image for every post. It also turns on the side bar on the right of post pages, which will display links to your latest posts. defaults: -  scope:   path:      type:  posts   values:   author:  Author Name    layout: post   hero_image: /path/to/hero-image. jpg   show_sidebar: trueStyles: The theme uses Bulma frontend framework which provides a wide range of sass variable customisations. If you want to overwrite any of the standard variables, such as the primary theme colour, then set a sass variable in a new file in assets/css/app. scss before importing the main stylesheet. ------$primary: #333333;// Import Main CSS file from theme@import  main ;You can also add any of your own custom css to this file if you want to. Navigation: Once you have created posts and pages, you will need to create a way for visitors to access them. The theme makes use of the Bulma navbar, which is configured through a simple yaml file. All you need to do is create a navigation. yml file in _data directory with the following format with the pages you want to include in the top navigation. You can now also add items to a dropdown menu. - name: Page 1 link: page-1- name: Blog link: blog dropdown:   - name: Page 2   link: page-2Bulma is pretty handy in the way it converts the same HTML into a mobile / tablet friendly navigation, so you only need to set the menu up once for all screen sizes. Using bulma-clean-theme with Github Pages: For the site to work with Github Pages, all you need to do is update the _config. yml so it uses remote_theme instead of theme and update it to chrisrhymes/bulma-clean-theme so it knows which GitHub repo to pull the theme from when it builds your site. #theme: bulma-clean-themeremote_theme: chrisrhymes/bulma-clean-themeAnd then push up your changes to Github as normal. There seems to be an issue where Jekyll doesn’t work locally with remote_theme, so when working locally you have to add theme back in, but remember to comment theme out again before pushing back up to GitHub or you will probably get a build warning email. I hope you’re not feeling overwhelmed: It may seem like there is a lot to do to get started, but really it shouldn’t take very long to get a site up and running. All the options are there just in case you want to further customise the theme to be more personal to you, but you can just use the basic minimal settings to get yourself up and running. Feedback and Issues: If you have any feedback, ideas or issues with how the theme could be improved, then please create an issue on the theme’s GitHub page and I will try and take a look into it as soon as I can. The theme is still quite new and I have quite a few ideas for future enhancements, so I will write a new blog post on this site when any new features become available. "
+    }, {
+    "id": 14,
+    "url": "https://chronosphere.info/development/2018/05/28/why-use-a-static-site-generator.html",
+    "title": "Why use a static site generator",
+    "body": "2018/05/28 - There are many ways to make a website and many different CMS platforms you can use, such as WordPress and Joomla, as well as site builder tools that offer you drag and drop interfaces, but what about static site generators? A static site is pretty much what it sounds like, a set of pre generated html pages. Other platforms take what you enter into the CMS and process the information stored in the database, alongside a template or many template partials and dynamically construct the page before serving the html to you in your browser. Speed: The initial advantage of a static site over a dynamic, database driven site is the page speed as means a lot less processing has to be done before the page is delivered. Some CMS’s provide caching which means that the first visitor to the page gets a dynamic version and then stores a cache of the page. This means subsequent visitor to the page gets the page quicker than the first. If you have a regularly cleared cache, or low numbers of visitors, subsequent visitors may not benefit from the caching and would all experience the increased load times. Version Control: The next advantage of a static site is that it is that it can be version controlled. Usually a CMS relies on a database, which means that if you delete a page or some page content you either have to have revisions enabled in your CMS so you can roll back to a previous version or you need regular backups of your database so you can roll that back to a previous version. A static site with version control means you can easily revert to a previous version of your site and content without the need for database manipulation. Data Files: Static sites, such as Jekyll, also offer a way of storing data in a more human readable format, such as yaml or JSON. This means you can store data that is used in multiple places across your site in one file and reference it in many places. For example, you may have a data file containing products, which you want to list in a category page and a product details page and maybe feature it on the homepage as well. These files can also be version controlled, meaning any changes or updates to your datafiles can be undone easily. The files can also be easily edited in a text editor so if you need to make multiple product amends, such as updating a misspelt brand name you can use something as simple as find and replace to update the spelling in all places at once without having to navigate to multiple different pages in a CMS. Design Freedom: The biggest benefit I find to a static site is there is more freedom for a frontend developer and how they design and build your site. Some CMS’s work in a particular way and you are limited by the way they work. Page builders are available for many CMS’s but it often results in a lot of effort to get a particular piece of content in a particular place on the page. A static site generator gives you more freedom to write your own html and text onto the page in the format you want it, rather than having to customise or overwrite the html and css classes output by the page builder tool. Data Protection: A lot of people like the idea of installing a plugin into a CMS to handle things such as contact forms, so people can contact you about something, but in all honesty, it’s easier just to have an email address on the page that users can click on and email you directly. The reason I say this is that you have to try and prevent spam emails by using some kind of captcha on the form, as well as maintaining an email service that will handle the form submission and either store the form data somewhere on your site or send it to you as an email. This is pretty basic stuff, but is further complicated by data privacy laws that dictate how you store customers data and how you protect it. I know a lot of small business users would prefer to not have the hassle of managing stored user data on their site. Security: One last thing to consider is website security. There is always a chance that using a popular CMS will leave your site vulnerable as there are always security issues being identified. You need to constantly keep your site up to date and lock down the CMS login as secure as possible. With a static site, there is no login screen. The original content lives somewhere else and the compiled, generated html is all that needs to be uploaded to your website, minimising the risk. Any public facing website has some risk but anything you can do to minimise it is better for your website in the long run. What will you use on your next project?: A static site may not be the first thing you consider when building your new website, but it’s definitely worth exploring the pros and cons before you start the next project. After all, a faster, more secure site is better for you and your visitors. "
+    }];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<div class='box'><li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li></div>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+
+<style>
+    #lunrsearchresults {padding-top: 0.2rem;}
+    .lunrsearchresult {padding-bottom: 1rem;}
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+<form onsubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <p><input type="text" class="input" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search for" /></p>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script>
+  function getQueryVariable(variable) {
+    var query = window.location.search.substring(1),
+      vars = query.split("&");
+
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split("=");
+
+      if (pair[0] === variable) {
+        return decodeURIComponent(pair[1].replace(/\+/g, '%20')).trim();
+      }
+    }
+  }
+
+  var query = decodeURIComponent((getQueryVariable("q") || "").replace(/\+/g, "%20"));
+  lunr_search(query);
+</script>
+
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+
+        <div class="content is-small has-text-centered">
+
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>

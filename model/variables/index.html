@@ -21,20 +21,20 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Available data | chronosphere</title>
+<title>Variables | chronosphere</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Available data" />
+<meta property="og:title" content="Variables" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Evolving Earth System Variables" />
 <meta property="og:description" content="Evolving Earth System Variables" />
-<link rel="canonical" href="https://chronosphere.info/data/" />
-<meta property="og:url" content="https://chronosphere.info/data/" />
+<link rel="canonical" href="https://chronosphere.info/model/variables/" />
+<meta property="og:url" content="https://chronosphere.info/model/variables/" />
 <meta property="og:site_name" content="chronosphere" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Available data" />
+<meta property="twitter:title" content="Variables" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Evolving Earth System Variables","headline":"Available data","url":"https://chronosphere.info/data/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Evolving Earth System Variables","headline":"Variables","url":"https://chronosphere.info/model/variables/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -82,7 +82,7 @@
                             
                             <a href="/model/datasets/" class="navbar-item ">Datasets</a>
                             
-                            <a href="/model/variables/" class="navbar-item ">Variables</a>
+                            <a href="/model/variables/" class="navbar-item is-active">Variables</a>
                             
                         </div>
                     </div>
@@ -100,7 +100,7 @@
                     
                 
                     
-                    <a href="/data/" class="navbar-item is-active">Data</a>
+                    <a href="/data/" class="navbar-item ">Data</a>
                     
                 
                     
@@ -147,7 +147,7 @@
         <div class="container">
 		  <div class="columns is-vcentered">
 			<div class="column is-7">
-			  <h1 class="title is-2">Available data</h1>
+			  <h1 class="title is-2">Variables</h1>
 			  <p class="subtitle is-3"></p>
 			  
 			</div>
@@ -169,40 +169,25 @@
                 
                 <div class="column is-4-desktop is-4-tablet">
                     
+                    
 
-<aside class="menu">
-
-    <p class="menu-label">Topics</p>
-    <ul class="menu-list">
-        
-        <li>
-            <a href="/" class="">Home</a>
-            
-        </li>
-        
-        <li>
-            <a href="" class="">Pages</a>
-            
-            <ul>
-                
-                <li><a href="/page-1/" class="">Page With Sidebar</a></li>
-                
-                <li><a href="/page-2/" class="">Page Without Sidebar</a></li>
-                
-                <li><a href="/page-3/" class="">Page With Menubar</a></li>
-                
-            </ul>
-            
-        </li>
-        
-        <li>
-            <a href="/blog/" class="">Blog</a>
-            
-        </li>
-            
+<div class="contents">
+    <div class="menu">
+        <p class="menu-label">Contents</p>
+        <ul class="menu-list">
+  <li><a href="#examples">Examples</a>
+    <ul>
+      <li><a href="#seawater-temperature-atmosphere">Seawater temperature (atmosphere)</a></li>
+      <li><a href="#global-richness-of-genera-biosphere">Global richness of genera (biosphere)</a></li>
     </ul>
+  </li>
+  <li><a href="#relationship-to-data-items">Relationship to data items</a></li>
+</ul>
+    </div>
+</div>
 
-</aside>
+
+
                 </div>
                 
                 <div class="column is-8">
@@ -212,7 +197,35 @@
                     
                     
 <div class="content">
-    <p>The data items of the chronosphere.</p>
+    <p>A variable is a function that maps one type of information to another.</p>
+
+<p>The blueprint of a variable is its dimensionality: the dimensions of its <strong>domain</strong> (to what it maps things) and its <strong>range</strong> (what it maps). The entire Earth system can represented with a set of variables or system descriptors.</p>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="seawater-temperature-atmosphere">Seawater temperature (atmosphere)</h3>
+
+<p><em>Seawater Temperature</em> is a variable that maps a single value (range: °K), to four dimensions (domain: longitude, latitude, elevation and absolute time).</p>
+
+<ul>
+  <li>HADIsst1</li>
+  <li>IPCC AR6 WG1 Atlas - CMIP6</li>
+  <li>BRIDGE climate data</li>
+</ul>
+
+<h3 id="global-richness-of-genera-biosphere">Global richness of genera (biosphere)</h3>
+
+<p>This variable (range: # of genera), domain (absolute time, set of organisms).</p>
+
+<ul>
+  <li>Sepkoski’s genus level diversity curves</li>
+</ul>
+
+<h2 id="relationship-to-data-items">Relationship to data items</h2>
+
+<p>The basic idea of the chronosphere is that every <a href="https://chronosphere.info/">data product</a> can be described as a manifestation of a variable, i.e. it becomes a value that it takes.</p>
+
+<p>We can trace how our understanding of the Earth System evolves in a secondary (knowledge) time dimension.</p>
 
 </div>
                 </div>
