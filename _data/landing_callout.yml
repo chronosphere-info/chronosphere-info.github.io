@@ -1,5 +1,5 @@
 items:
-  - title: Download data items
+  - title: Access data items
     subtitle: Direct access
     icon: fa-download
     call_to_action_name: Explore Data Model 
@@ -9,7 +9,7 @@ items:
     icon: fa-route
     call_to_action_name: Why? 
     call_to_action_link: /page-2/
-  - title: Variables 
+  - title: Formal Variables 
     subtitle: Systematics of data
     icon: fa-globe
     call_to_action_name: Available data 
