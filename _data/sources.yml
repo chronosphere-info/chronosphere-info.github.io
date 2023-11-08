@@ -1,0 +1,48 @@
+- name: Paleogeography
+  content:
+  - src: SOM-kocsis-provinciality
+    sourceName: Code, used data and supplementary items for the articled Increase
+      in marine provinciality over the last 250 million years governed more by climate
+      change than plate tectonics
+  - src: paleomap
+    sourceName: The PALEOMAP project
+  - src: SOM-zaffos-fragmentation
+    sourceName: The continent fragmentation results of Zaffos et al. 2017
+  - src: EarthByte
+    sourceName: 'EarthByte: Building a Virtual Earth'
+- name: Traits
+  content:
+  - src: SOM-reddin-sensitivity
+    sourceName: 'Repository for: Reddin et al. 2020. Marine clade sensitivities to
+      climate change conform across time scales'
+  - src: CoralTraitDB
+    sourceName: Coral Trait Database
+  - src: SOM-kiessling-coralgenera
+    sourceName: List of scleractinian genera in the Paleobiology Database and their
+      inferred symbiotic mode
+  - src: AncientReefTraits
+    sourceName: Ancient Reef Traits Database
+- name: Organism distribution
+  content:
+  - src: pbdb
+    sourceName: The Paleobiology Database
+  - src: biodeeptime
+    sourceName: BioDeepTime
+  - src: triton
+    sourceName: Triton Database
+  - src: neptune
+    sourceName: Neptune Sandbox Berlin
+- name: Geography
+  content:
+  - src: NaturalEarth
+    sourceName: Natural Earth
+  - src: SOM-Li-PhanerozoicClimate
+    sourceName: A high-resolution climate simulation dataset for the past 540 million
+      years
+- name: Bioregionalization
+  content:
+  - src: MEOW
+    sourceName: Marine Ecoregions of the World
+  - src: myers-hotspots
+    sourceName: Biodiversity Hotspots (sensu Myers)
+

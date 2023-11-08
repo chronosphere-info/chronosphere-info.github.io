@@ -1,15 +1,12 @@
-- label: Topics 
+- label: Data 
   items:
-    - name: Home
-      link: /
     - name: Pages
-      link: #
       items:
-        - name: Page With Sidebar 
-          link: /page-1/
-        - name: Page Without Sidebar
-          link: /page-2/
-        - name: Page With Menubar
-          link: /page-3/
+        - name: Source details
+          link: "#"
+        - name: Series Description 
+          link: "#description"
+        - name: Data products
+          link: "#products"
     - name: Blog
       link: /blog/

@@ -1,9 +1,9 @@
 - name: About
   dropdown:
-  - name: Why?  
-    link: /about/iral/
-  - name: People  
-    link: /about/iral/
+  - name: The chronosphere 
+    link: /about/
+  - name: Related projects 
+    link: /about/related/
 - name: Model
   dropdown:
    - name: Datasets 

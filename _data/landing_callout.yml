@@ -1,16 +1,16 @@
 items:
-  - title: Access data items
-    subtitle: Direct access
+  - title: Data distribution
+    subtitle: Discover, Download, Import, Store
     icon: fa-download
-    call_to_action_name: Explore Data Model 
-    call_to_action_link: https://chronosphere.info/r_client/
+    call_to_action_name: Access data items ⬇
+    call_to_action_link: /#access-data-items
   - title: Tracing Data Evolution  
-    subtitle: Direct  
+    subtitle: Enhancing Research Replicability  
     icon: fa-route
-    call_to_action_name: Why? 
-    call_to_action_link: /page-2/
+    call_to_action_name: Tracing Data Evolution ⬇
+    call_to_action_link: /#tracing-data-evolution
   - title: Formal Variables 
-    subtitle: Systematics of data
+    subtitle: Systematics of Earth System Data
     icon: fa-globe
-    call_to_action_name: Available data 
-    call_to_action_link: /data/
+    call_to_action_name: Formal variables ⬇
+    call_to_action_link: /#formal-variables

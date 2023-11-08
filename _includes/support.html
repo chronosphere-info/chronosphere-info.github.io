@@ -1,0 +1,15 @@
+  <hr>
+<div class="content">
+<h2>Financial and logistic support</h2>
+
+<div class="columns is-vcentered is-multiline">
+{% for sup in site.data.support %}
+<div class="column is-1" markdown="1" stlye="text-align:center">
+<a href="{{sup.link}}"><img src="{{site.url}}{{site.baseurl}}/images/logos/{{sup.image}}"></a>
+
+</div>
+{% endfor %}
+</div>
+
+
+</div>

@@ -26,6 +26,8 @@ url: "https://chronosphere.info" # the base hostname & protocol for your site, e
 twitter_username: jekyllrb
 github_username:  chronosphere-info
 
+footer_menu: footer
+
 # Build settings
 plugins:
   - jekyll-feed
@@ -39,9 +41,10 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
+exclude:
+  - scripts/
+  - temporary/
+  - templates/ 
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock

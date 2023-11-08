@@ -3,6 +3,7 @@ layout: page
 title: Variables 
 menubar_toc: true
 permalink: /model/variables/
+hero_image: "/images/backgrounds/rainforest.jpg"
 ---
 
 A variable is a function that maps one type of information to another. 

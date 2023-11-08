@@ -1,0 +1,18 @@
+- name: Deutsche Forschungsgemeinschaft
+  image: dfg.png
+  link: https://www.dfg.de/en/index.jsp
+- name: GeoZentrum Nordbayern
+  image: gzn.png
+  link: https://www.gzn.nat.fau.eu/
+- name: Friedrich-Alexander-Univesität Erlangen-Nürnberg 
+  image: FAURGB_blue_NatFak_Q_CMYK_pos.svg
+  link: https://www.fau.eu/
+- name: VolkswagenStiftung
+  image: Volkswagenstiftung.png
+  link: https://www.volkswagenstiftung.de/en
+- name: Zenodo 
+  image: zenodo-gradient-1000.png 
+  link: https://zenodo.org/
+- name: GitHub 
+  image: github.png 
+  link: https://github.com/

@@ -1,18 +1,23 @@
 <section class="hero {% if page.hero_height %} {{ page.hero_height }} {% else %} is-medium {% endif %} is-bold is-primary" {% if page.hero_image %} style="background: url('{{ page.hero_image }}') no-repeat center center; background-size: cover;" {% endif %}>
+    <div style="background: linear-gradient(#fff0,#ffff)">
     <div class="hero-body {% if page.hero_darken %} hero-darken {% endif %}">
         <div class="container">
 		  <div class="columns is-vcentered">
+			<div class="column is-1">
+			</div>
 			<div class="column is-7">
-			  <h1 class="title is-2">{{ page.title }}</h1>
-			  <p class="subtitle is-3">{{ page.subtitle }}</p>
+			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">{{ page.title }}</h1>
+			  <p class="subtitle is-3"  style="filter: drop-shadow(2px 2px 3px #000d)">{{ page.subtitle }}</p>
 			  {% if page.hero_link %}
 				  <a href="{{ page.hero_link | relative_url }}" class="button is-info is-large">{{ page.hero_link_text }}</a>
 			  {% endif %}
 			</div>
 			<div class="column is-3">
-			  <a href="{{site.url}}{{site.baseurl}}"><img src="{{site.url}}{{site.baseurl}}/images/chronosphere/chronosphere_500.png" width="300px"></a>
+			  <a href="{{site.url}}{{site.baseurl}}"><img src="{{site.url}}{{site.baseurl}}/images/chronosphere/chronosphere_500.png" width="300px" style="-webkit-filter: drop-shadow(0px 0px 200px #fff);
+  filter: drop-shadow(0px 0px 200px #fff);"></a>
 			</div>
 			</div>
         </div>
+    </div>
     </div>
 </section>
