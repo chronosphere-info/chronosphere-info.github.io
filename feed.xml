@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://chronosphere.info/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chronosphere.info/" rel="alternate" type="text/html" /><updated>2023-08-10T14:21:48+02:00</updated><id>https://chronosphere.info/feed.xml</id><title type="html">chronosphere</title><subtitle>Evolving Earth System Variables</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-03-27T18:02:37+02:00</published><updated>2023-03-27T18:02:37+02:00</updated><id>https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll</id><content type="html" xml:base="https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://chronosphere.info/feed.xml" rel="self" type="application/atom+xml" /><link href="https://chronosphere.info/" rel="alternate" type="text/html" /><updated>2023-11-08T22:38:41+01:00</updated><id>https://chronosphere.info/feed.xml</id><title type="html">chronosphere</title><subtitle>Evolving Earth System Variables</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-03-27T18:02:37+02:00</published><updated>2023-03-27T18:02:37+02:00</updated><id>https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll</id><content type="html" xml:base="https://chronosphere.info/jekyll/update/2023/03/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
@@ -14,49 +14,7 @@
 <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
 <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Creating a post series</title><link href="https://chronosphere.info/2021/10/30/creating-a-post-series.html" rel="alternate" type="text/html" title="Creating a post series" /><published>2021-10-30T11:00:07+02:00</published><updated>2021-10-30T11:00:07+02:00</updated><id>https://chronosphere.info/2021/10/30/creating-a-post-series</id><content type="html" xml:base="https://chronosphere.info/2021/10/30/creating-a-post-series.html"><![CDATA[<p>From version 0.12, you can now make a post a part of a series of posts, linking to the other posts in the series, by creating a <code class="language-plaintext highlighter-rouge">series</code> data file and then setting the series in each of the post’s front matter.</p>
-
-<p>The current post in the list is highlighted to help give context of where you are in the series.</p>
-
-<h2 id="blog-series-data-file">Blog Series Data File</h2>
-
-<p>Start by creating a yml file in the _data directory, for example <code class="language-plaintext highlighter-rouge">my_blog_series.yml</code>. Give the series a title and, optionally, a description.</p>
-
-<h2 id="sections">Sections</h2>
-
-<p>Next add sections. Each section can have a label (optional) and items. Each item is the title of an existing blog post. If the title is not found then the link will be empty.</p>
-
-<p>If you just want one list without labels, then omit the label and just add the items.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">The series title</span>
-<span class="na">sections</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">items</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Why use a static site generator</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Getting started with Bulma Clean Theme for Jekyll</span>
-</code></pre></div></div>
-
-<p>Here is a full example with multiple sections with labels.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">title</span><span class="pi">:</span> <span class="s">The series title</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s">The series description text</span>
-<span class="na">sections</span><span class="pi">:</span>
-  <span class="pi">-</span> <span class="na">label</span><span class="pi">:</span> <span class="s">The first section</span>
-    <span class="na">items</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Why use a static site generator</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Getting started with Bulma Clean Theme for Jekyll</span>
-  <span class="pi">-</span> <span class="na">label</span><span class="pi">:</span> <span class="s">Another section</span>
-    <span class="na">items</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Introducing some new layouts to Bulma Clean Theme</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Creating a docs site with Bulma Clean Theme</span>
-      <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Creating a post series</span>
-</code></pre></div></div>
-
-<h2 id="update-your-posts">Update your posts</h2>
-
-<p>Finally, add the series setting to your front matter in each post you want the series to show in.</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">series</span><span class="pi">:</span> <span class="s">my_blog_series</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="bulma-clean-theme" /><category term="jekyll" /><category term="blog" /><summary type="html"><![CDATA[How to create a post series with Bulma Clean Theme]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://chronosphere.info/bulma-clean-theme/img/blog-post-series.jpg" /><media:content medium="image" url="https://chronosphere.info/bulma-clean-theme/img/blog-post-series.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Creating a docs site with Bulma Clean Theme</title><link href="https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html" rel="alternate" type="text/html" title="Creating a docs site with Bulma Clean Theme" /><published>2020-05-08T11:00:07+02:00</published><updated>2020-05-08T11:00:07+02:00</updated><id>https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme</id><content type="html" xml:base="https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html"><![CDATA[<p>I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project.</p>
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Creating a docs site with Bulma Clean Theme</title><link href="https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html" rel="alternate" type="text/html" title="Creating a docs site with Bulma Clean Theme" /><published>2020-05-08T11:00:07+02:00</published><updated>2020-05-08T11:00:07+02:00</updated><id>https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme</id><content type="html" xml:base="https://chronosphere.info/2020/05/08/creating-a-docs-site-with-bulma-clean-theme.html"><![CDATA[<p>I created Bulma Clean Theme as a theme for my own website and decided to open source it so others could use it as well. One of the key things I wanted to do was to create a theme that worked with GitHub Pages, which also means that you can also use it as a docs site for your project.</p>
 
 <h2 id="github-pages-configuration">GitHub Pages Configuration</h2>
 

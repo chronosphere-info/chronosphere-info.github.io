@@ -1,0 +1,4222 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="/favicon.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Paleobiology Database | chronosphere</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="The Paleobiology Database" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="dummyfile" />
+<meta property="og:description" content="dummyfile" />
+<link rel="canonical" href="https://chronosphere.info/data/pbdb/occs2/" />
+<meta property="og:url" content="https://chronosphere.info/data/pbdb/occs2/" />
+<meta property="og:site_name" content="chronosphere" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Paleobiology Database" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"dummyfile","headline":"The Paleobiology Database","url":"https://chronosphere.info/data/pbdb/occs2/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts -->
+  <script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  </script>
+</head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a id="brand-name" href="/" class="navbar-item">
+              <img id="brand-logo" src="https://chronosphere.info/images/chronosphere/chronosphere_luminosity_500_hover.png" height="30px" width="30px">
+                chronosphere
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+
+                
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">About</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/about/" class="navbar-item ">The chronosphere</a>
+                            
+                            <a href="/about/related/" class="navbar-item ">Related projects</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Model</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/model/datasets/" class="navbar-item ">Datasets</a>
+                            
+                            <a href="/model/variables/" class="navbar-item ">Variables</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Use cases</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/uses/" class="navbar-item ">Result tracing</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/data/" class="navbar-item ">Data</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="" class="navbar-link ">Clients</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="https://chronosphere.info/r_client/" class="navbar-item ">R package</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/contact/" class="navbar-item ">Contact</a>
+                    
+                
+                
+            </div>
+
+            <div class="navbar-end">
+                
+
+                <a class="navbar-item" href="https://evolv-ed.net">
+				  <span>Evolv-ED</span>
+                </a>
+				<div class="navbar-item">
+					<form action="/search/" method="get">
+						<input class="input is-small" type="text" name="q" placeholder="Search for">
+					</form>
+				</div>
+                <a class="navbar-item" href="https://github.com/chronosphere-info">
+                   <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div style="background: linear-gradient(#fff0,#ffff)">
+    <div class="hero-body ">
+        <div class="container">
+		  <div class="columns is-vcentered">
+			<div class="column is-1">
+			</div>
+			<div class="column is-7">
+			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">The Paleobiology Database</h1>
+			  <p class="subtitle is-3"  style="filter: drop-shadow(2px 2px 3px #000d)"></p>
+			  
+			</div>
+			<div class="column is-3">
+			  <a href="https://chronosphere.info"><img src="https://chronosphere.info/images/chronosphere/chronosphere_500.png" width="300px" style="-webkit-filter: drop-shadow(0px 0px 200px #fff);
+  filter: drop-shadow(0px 0px 200px #fff);"></a>
+			</div>
+			</div>
+        </div>
+    </div>
+    </div>
+</section>
+
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-12">
+                    
+                    
+                    
+                    
+                    
+<div class="content">
+    <script src="https://chronosphere.info/assets/js/tabs.js"></script>
+
+<script src="https://chronosphere.info/assets/js/clipboard.min.js"></script>
+
+<script src="https://chronosphere.info/assets/js/jquery-3.7.0.js"></script>
+<p><!--Add JQuery-->
+<script src="https://chronosphere.info/assets/js/jquery.dataTables.min.js"></script></p>
+<link rel="stylesheet" type="text/css" href="https://chronosphere.info/assets/css/jquery.dataTables.min.css" />
+
+<div class="columns">
+<div class="column is-8">
+
+    <h1 id="basic-denormalized-occurrence-table-with-references">Basic denormalized occurrence table with references</h1>
+
+    <p><small style="color:gray"><i> - Data series from <a href="https://chronosphere.info/data/pbdb/">The Paleobiology Database</a></i></small></p>
+
+    <hr />
+
+    <p>dummyfile</p>
+
+    <div style="overflow-wrap:break-word">
+
+      <h5 id="api-link">API link</h5>
+
+      <p><code>https://paleobiodb.org/data1.2/occs/list.csv?datainfo&amp;rowcount&amp;interval=Ediacaran,Holocene&amp;show=class,classext,genus,subgenus,coll,coords,loc,paleoloc,strat,stratext,lith,env,ref,crmod,timebins,timecompare,refattr,entname</code></p>
+
+    </div>
+
+    <h3 id="default-data-product">Default data product</h3>
+
+    <div class="tabs is-boxed">
+  <ul>
+
+    <li class="tab is-active" onclick="openTab(event,'r-default')"><a><img src="https://chronosphere.info/images/logos/RlogoNew.png" style="width:30px" /></a></li>
+
+
+  </ul>
+</div>
+
+    <div class="container section">
+
+
+<div class="content-tab" id="r-default">
+        <p>Download the data objects with:</p>
+        <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">object</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">chronosphere</span><span class="o">::</span><span class="n">fetch</span><span class="p">(</span><span class="n">src</span><span class="o">=</span><span class="s2">"pbdb"</span><span class="p">,</span><span class="w"> </span><span class="n">ser</span><span class="o">=</span><span class="s2">"occs2"</span><span class="p">)</span><span class="w">
+</span></code></pre></div>        </div>
+      </div>
+
+<div class="content-tab" id="py-default" style="display:none">
+        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Python</span> <span class="n">code</span><span class="err">!</span>
+</code></pre></div>        </div>
+      </div>
+</div>
+
+  </div>
+
+<div class="column is-4 box" style="text-align:center">
+
+    <p><img src="https://chronosphere.info/images/chronos_logos/PBDB2014.png" style="max-width:250px" /></p>
+
+    <h5 id="coordinates">Coordinates</h5>
+
+    <table>
+<tr> <td> src </td> <td><code>pbdb</code> </td></tr>
+<tr> <td> ser </td> <td><code>occs2</code> </td></tr>
+</table>
+
+    <h5 id="defaults">Defaults</h5>
+
+  </div>
+
+
+</div>
+
+<p><br /></p>
+
+<h1 id="available-products">Available products</h1>
+
+<hr />
+
+<table class="display" id="my-table">
+<thead>
+<tr><th>Version</th><th>Resolution</th> <th>Date</th> <th>Fetch!</th></tr>
+</thead>
+
+<tbody>
+
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200909"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200909\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200910"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200910\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200911"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200911\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200913"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200913\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200914"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200914\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200915"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200915\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200916"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200916\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200917"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200917\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200918"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200918\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200920"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200920\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200921"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200921\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200922"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200922\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200923"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200923\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200924"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200924\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200925"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200925\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200926"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200926\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200927"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200927\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200928"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200928\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200929"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-29 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200929\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20200930"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-09-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20200930\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201001"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201001\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201002"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201002\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201003"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201003\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201004"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201004\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201005"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201005\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201006"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201006\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201007"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201007\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201008"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201008\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201010"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201010\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201011"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201011\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201012"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201012\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201013"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201013\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201014"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201014\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201015"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201015\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201016"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201016\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201017"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201017\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201018"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201018\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201019"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201019\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201020"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201020\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201021"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201021\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201022"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201022\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201023"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201023\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201024"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201024\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201025"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201025\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201026"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201026\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201027"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201027\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201028"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201028\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201029"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-29 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201029\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201030"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201030\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201031"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-10-31 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201031\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201101"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201101\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201102"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201102\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201103"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201103\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201104"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201104\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201105"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201105\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201106"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201106\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201108"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201108\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201109"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201109\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201110"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201110\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201111"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201111\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201112"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201112\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201113"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201113\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201114"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201114\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201115"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201115\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201116"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201116\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201117"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201117\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201118"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201118\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201119"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201119\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201120"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201120\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201122"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201122\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201123"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201123\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201124"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201124\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201125"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201125\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201126"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201126\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201127"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201127\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201128"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201128\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201129"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-29 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201129\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201130"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-11-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201130\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201201"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201201\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201202"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201202\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201203"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201203\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201204"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201204\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201206"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201206\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201207"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201207\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201208"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201208\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201209"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201209\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201210"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201210\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201212"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201212\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201213"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201213\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201214"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201214\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201215"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201215\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201216"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201216\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201217"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201217\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201218"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201218\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201219"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201219\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201220"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201220\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201221"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201221\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201222"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201222\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201223"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201223\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201224"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201224\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201225"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201225\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201226"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201226\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201227"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201227\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201228"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201228\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201229"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-29 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201229\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201230"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201230\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20201231"</code></td>
+<td> <code>species</code> </td>
+<td> 2020-12-31 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20201231\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210101"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210101\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210102"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210102\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210103"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210103\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210104"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210104\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210105"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210105\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210106"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210106\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210107"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210107\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210108"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210108\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210109"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210109\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210110"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210110\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210111"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210111\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210112"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210112\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210113"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210113\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210114"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210114\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210115"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210115\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210116"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210116\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210117"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210117\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210118"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210118\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210120"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210120\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210121"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210121\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210122"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210122\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210123"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210123\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210124"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210124\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210125"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210125\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210126"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210126\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210127"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210127\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210128"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210128\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210130"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210130\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210131"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-01-31 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210131\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210201"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210201\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210202"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210202\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210204"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210204\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210205"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210205\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210207"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210207\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210208"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210208\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210209"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210209\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210210"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210210\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210211"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210211\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210212"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210212\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210214"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210214\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210215"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210215\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210216"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210216\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210217"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210217\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210218"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210218\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210219"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210219\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210221"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210221\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210222"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210222\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210223"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210223\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210224"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210224\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210225"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210225\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210226"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210226\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210228"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-02-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210228\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210301"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210301\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210302"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210302\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210303"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210303\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210304"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210304\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210305"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210305\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210306"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210306\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210307"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210307\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210308"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210308\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210310"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210310\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210311"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210311\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210312"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210312\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210313"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210313\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210314"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210314\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210315"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210315\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210317"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210317\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210318"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210318\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210319"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210319\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210320"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210320\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210321"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210321\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210322"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210322\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210323"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210323\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210324"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210324\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210325"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210325\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210326"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210326\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210328"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210328\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210331"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-03-31 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210331\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210401"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210401\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210402"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210402\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210403"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210403\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210405"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210405\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210406"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210406\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210407"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210407\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210408"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210408\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210409"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210409\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210410"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210410\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210411"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210411\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210412"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210412\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210413"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210413\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210414"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210414\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210416"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-16 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210416\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210417"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210417\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210418"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-18 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210418\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210419"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-19 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210419\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210420"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-20 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210420\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210421"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-21 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210421\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210422"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-22 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210422\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210423"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-23 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210423\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210424"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-24 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210424\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210425"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-25 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210425\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210426"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-26 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210426\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210427"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-27 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210427\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210428"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-28 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210428\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210429"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-29 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210429\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210430"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-04-30 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210430\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210501"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-01 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210501\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210502"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-02 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210502\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210503"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-03 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210503\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210504"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-04 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210504\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210505"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-05 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210505\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210506"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-06 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210506\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210507"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-07 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210507\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210508"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-08 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210508\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210509"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-09 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210509\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210510"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-10 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210510\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210511"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-11 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210511\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210512"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-12 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210512\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210513"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-13 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210513\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210514"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-14 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210514\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210515"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-15 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210515\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+<tr> 
+
+
+ 
+
+<td> <code>"20210517"</code></td>
+<td> <code>species</code> </td>
+<td> 2021-05-17 </td>
+<td> 
+	<button class="button is-small" onclick="myFunction(&quot;chronosphere::fetch(src = \&quot;pbdb\&quot;, ser = \&quot;occs2\&quot;, ver = \&quot;20210517\&quot;, res = \&quot;species\&quot;)&quot;)" style="font-size:0.5rem">
+		<img src="https://chronosphere.info/images/misc/copy-to-clipboard_R.svg" style="width:20px" /> 
+	</button> 
+</td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<script>
+new DataTable('#my-table');
+</script>
+
+<script>
+function myFunction(message) {
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(message);
+} 
+</script>
+
+
+</div>
+                </div>
+                
+            </div>
+
+			
+			
+        </div>
+    </section>
+    
+        <footer class="footer">
+
+    <div class="container">
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/imprint/" class="link">Imprint</a>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="content is-small has-text-centered">
+
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
