@@ -1,0 +1,94 @@
+{
+	"data": [ 
+	{
+		"ver" : "v1.0",
+		"res" : "1",
+		"productDate" : "2021-07-25",
+		"R": ["RasterArray"], 
+		"items" :
+		[
+			{
+				"class": "RasterArray",
+				"language": "R",
+				"dependencies":
+				[
+					{
+						"software" : "R",
+						"version" :  "4.0.0", 
+						"url": "https://r-project.org"
+					},
+					{
+						"software" : "terra",
+						"version" :  "1.4", 
+						"url": "https://cran.r-project.org/package=terra"
+					}
+				]
+			}
+		],
+		"files" :
+		[
+			{
+				"link" : "https://zenodo.org/record/3973037/files/S6_sst_inter_1deg.zip?download=1",
+				"filename": "S6_sst_inter_1deg.zip",
+				"repo": "zenodo"
+			}
+		]
+	},
+	{
+		"ver" : "v2.0",
+		"res" : "1",
+		"productDate" : "2022-07-25",
+		"R": ["RasterArray", "SpatRaster"], 
+		"items" :
+		[
+			{
+				"class": "RasterArray",
+				"language": "Python",
+				"dependencies":
+				[
+					{
+						"software" : "R",
+						"version" :  "4.0.0", 
+						"url": "https://r-project.org"
+					},
+					{
+						"software" : "terra",
+						"version" :  "1.4", 
+						"url": "https://cran.r-project.org/package=terra"
+					},
+					{
+						"software" : "via",
+						"version" :  "1.4", 
+						"url": "https://cran.r-project.org/package=via"
+					}
+				]
+			},
+			{
+				"class": "SpatRaster",
+				"language": "R",
+				"dependencies":
+				[
+					{
+						"software" : "R",
+						"version" :  "4.0.0", 
+						"url": "https://r-project.org"
+					},
+					{
+						"software" : "terra",
+						"version" :  "1.4", 
+						"url": "https://cran.r-project.org/package=terra"
+					}
+				]
+			}
+		],
+		"files" :
+		[
+			{
+				"link" : "https://zenodo.org/record/3973037/files/S6_sst_inter_1deg.zip?download=1",
+				"filename": "S6_sst_inter_1deg.zip",
+				"repo": "zenodo"
+			}
+		]
+	}
+]
+}

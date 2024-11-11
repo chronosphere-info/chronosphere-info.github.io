@@ -23,9 +23,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Search results | chronosphere</title>
+<title>About | chronosphere</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Search results" />
+<meta property="og:title" content="About" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Evolving Earth System Variables" />
 <meta property="og:description" content="Evolving Earth System Variables" />
@@ -34,9 +34,9 @@
 <meta property="og:site_name" content="chronosphere" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Search results" />
+<meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Evolving Earth System Variables","headline":"Search results","name":"chronosphere","url":"https://chronosphere.info/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","description":"Evolving Earth System Variables","headline":"About","name":"chronosphere","url":"https://chronosphere.info/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -86,6 +86,8 @@
                             
                             <a href="/model/variables/" class="navbar-item ">Variables</a>
                             
+                            <a href="/model/docs/" class="navbar-item ">Documentation</a>
+                            
                         </div>
                     </div>
                     
@@ -102,7 +104,16 @@
                     
                 
                     
-                    <a href="/data/" class="navbar-item ">Data</a>
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/data/" class="navbar-link ">Data</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/data/" class="navbar-item ">Available data</a>
+                            
+                            <a href="/data/policy/" class="navbar-item ">Policy</a>
+                            
+                        </div>
+                    </div>
                     
                 
                     
@@ -144,7 +155,7 @@
 </nav>
 
     
-        <section class="hero  is-medium  is-bold is-primary" >
+        <section class="hero  is-medium  is-bold is-primary"  style="background: url('/images/backgrounds/mountain.jpg') no-repeat center center; background-size: cover;" >
     <div style="background: linear-gradient(#fff0,#ffff)">
     <div class="hero-body ">
         <div class="container">
@@ -152,7 +163,7 @@
 			<div class="column is-1">
 			</div>
 			<div class="column is-7">
-			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">Search results</h1>
+			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">About</h1>
 			  <p class="subtitle is-3"  style="filter: drop-shadow(2px 2px 3px #000d)"></p>
 			  
 			</div>
@@ -181,15 +192,46 @@
                     
                     
 <div class="content">
-    <p>Besides considering data that take place in absolute time, the chronosphere aims at putting them in a more humane, knowledge-time dimension.</p>
+    <h2 id="project-development">Project development</h2>
 
-<h2 id="project-development">Project development</h2>
+<hr />
 
-<p>The project was concieved within the DFG Reserach Unit TERSANE.</p>
+<h4 id="background">Background</h4>
+<div class="columns">
 
-<p>The current implementation is still in prototype phase.</p>
+<div class="column is-10">
+    <p>The project was concieved within the second phase (2019-2022) of the <a href="https://cnidaria.nat.uni-erlangen.de/wp/">DFG Research Unit TERSANE (FOR 2332)</a> which had the aim to unravel the connections between climatic changes and ancient extinction events. The original aim of the <strong>chronosphere</strong>, developed primarilly <a href="https://adamtkocsis.com">Ádám T. Kocsis</a>, within sub-project <a href="https://cnidaria.nat.uni-erlangen.de/wp/index.php/project/research/project-spex/">SPex</a>, was to make past climate model results available to be easilly incorporated in paleobiological studies. The initial phases were</p>
+
+    <p>R extension package, which was partitioned and became the <a href="https://chronosphere.info/r_client/">chronosphere</a>, <a href="https://adamkocsis.github.io/via/">via</a> and <a href="https://adamkocsis.github.io/rgplates/">rgplates</a> packages.</p>
+
+  </div>
+<div class="column is-2">
+<a href="https://cnidaria.nat.uni-erlangen.de/wp/"><img src="https://chronosphere.info/images/logos/tersane-proj.png" /></a>
+</div>
+</div>
+
+<h4 id="current-stage-and-short-term-plans">Current stage and short-term plans</h4>
+
+<p>The current implementation is in prototype stage and it is under beta (public) testing.</p>
+
+<h4 id="long-term-plans">Long-term plans</h4>
+
+<p>The back-end meta-database is currently getting developed to register how data series are derived from each other and how they manifest formalized variables that represent our understanding of the Earth System. The current, static prototype of the chronosphere will be developed into a dynamic framework that allows a community-driven aggregation of data, if necessary, using a Big Data-enabling, distributed NoSQL data management system.</p>
+
+<p>Long-term goal is to store the data objects in a distributed data framework, where the chronosphere fetch calls allow the seamless transition to remote computing where data objects can be used remotely, in situe</p>
+<ul>
+  <li>1 itemization (defining data items)</li>
+  <li>2 access</li>
+  <li>3 caching remote-identical objects in local environment</li>
+  <li>4 remote use</li>
+</ul>
+
+<p>The chronosphere is meant to become the research API of an Earth Data Entity Network, an in-development, open paleontolgoical data service, that will developed under the initiative of the <a href="https://chronosphere.info/related/#integrated-record-of-ancient-life">Integrated Record of Ancient Life</a>.</p>
 
 <h2 id="funding">Funding</h2>
+
+<hr />
+
 
 </div>
                 </div>
