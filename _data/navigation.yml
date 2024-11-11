@@ -10,12 +10,19 @@
      link: /model/datasets/
    - name: Variables 
      link: /model/variables/
+   - name: Documentation 
+     link: /model/docs/
 - name: Use cases
   dropdown:
    - name: Result tracing 
      link: /uses/
 - name: Data
   link: /data/
+  dropdown:
+   - name: Available data 
+     link: /data/
+   - name: Policy 
+     link: /data/policy/
 - name: Clients 
   dropdown:
    - name: R package 

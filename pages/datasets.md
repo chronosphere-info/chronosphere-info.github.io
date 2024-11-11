@@ -2,6 +2,7 @@
 layout: page
 title: Datasets 
 menubar: data_categ
+hero_image: "/images/backgrounds/mountain.jpg"
 permalink: /model/datasets/
 ---
 
@@ -45,3 +46,10 @@ Shorthands are used to identify items.
 | Series     |   |         |
 | Product    |   |         |
 | item       |   |         |
+
+
+# Recommendations
+
+- For publications 
+
+Download the data that you use with the 

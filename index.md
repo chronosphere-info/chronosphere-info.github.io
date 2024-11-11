@@ -8,6 +8,10 @@ show_sidebar: true
 show_support: true
 ---
 
+<style>
+html{scroll-behavior:smooth}
+</style>
+
 <section class="section" markdown="1">
 
 <div class="columns">
@@ -26,6 +30,7 @@ To fill in the interdisciplinary gaps between  geoscience disciplines and help w
 
 You can find more about the project [here]({{site.url}}{{site.baseurl}}/about/project/). 
 
+<p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 </div>
 </div>
 
@@ -47,6 +52,8 @@ The chrononsphere is a research API, that makes code robust and portable.
 
 The data distribution framework is organized into three levels of primary entities: data items, data products and product series. Etc...
 -how data products evolve
+
+<a href="{{site.url}}{{site.baseurl}}/r_client/#example"><button class="button is-primary" > Give it a shot! - access data with the chronosphere R package!</button></a>
 
 </div>
 <div class="column is-4">
@@ -73,7 +80,10 @@ The data distribution framework is organized into three levels of primary entiti
 </div>
 
 
+
 </div>
+
+<p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 
 </section>
 
@@ -112,6 +122,7 @@ Technically these are functions that render information of some structure (the r
 
 
 
+<p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 
 </section>
 
