@@ -2575,6 +2575,1396 @@ products:
   date: '2023-11-08'
   license: CC BY 4.0
   class: 'R: data.frame'
+- version: '20231109'
+  res: species
+  date: '2023-11-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231110'
+  res: species
+  date: '2023-11-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231111'
+  res: species
+  date: '2023-11-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231112'
+  res: species
+  date: '2023-11-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231113'
+  res: species
+  date: '2023-11-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231114'
+  res: species
+  date: '2023-11-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231115'
+  res: species
+  date: '2023-11-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231116'
+  res: species
+  date: '2023-11-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231118'
+  res: species
+  date: '2023-11-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231119'
+  res: species
+  date: '2023-11-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231120'
+  res: species
+  date: '2023-11-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231121'
+  res: species
+  date: '2023-11-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231122'
+  res: species
+  date: '2023-11-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231123'
+  res: species
+  date: '2023-11-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231124'
+  res: species
+  date: '2023-11-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231125'
+  res: species
+  date: '2023-11-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231126'
+  res: species
+  date: '2023-11-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231127'
+  res: species
+  date: '2023-11-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231128'
+  res: species
+  date: '2023-11-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231129'
+  res: species
+  date: '2023-11-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231130'
+  res: species
+  date: '2023-11-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231201'
+  res: species
+  date: '2023-12-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231202'
+  res: species
+  date: '2023-12-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231203'
+  res: species
+  date: '2023-12-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231204'
+  res: species
+  date: '2023-12-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231205'
+  res: species
+  date: '2023-12-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231206'
+  res: species
+  date: '2023-12-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231207'
+  res: species
+  date: '2023-12-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231208'
+  res: species
+  date: '2023-12-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231209'
+  res: species
+  date: '2023-12-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231210'
+  res: species
+  date: '2023-12-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231211'
+  res: species
+  date: '2023-12-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231213'
+  res: species
+  date: '2023-12-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231214'
+  res: species
+  date: '2023-12-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231215'
+  res: species
+  date: '2023-12-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231216'
+  res: species
+  date: '2023-12-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231217'
+  res: species
+  date: '2023-12-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231218'
+  res: species
+  date: '2023-12-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231219'
+  res: species
+  date: '2023-12-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231220'
+  res: species
+  date: '2023-12-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20231221'
+  res: species
+  date: '2023-12-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240107'
+  res: species
+  date: '2024-01-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240108'
+  res: species
+  date: '2024-01-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240109'
+  res: species
+  date: '2024-01-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240111'
+  res: species
+  date: '2024-01-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240113'
+  res: species
+  date: '2024-01-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240115'
+  res: species
+  date: '2024-01-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240116'
+  res: species
+  date: '2024-01-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240117'
+  res: species
+  date: '2024-01-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240118'
+  res: species
+  date: '2024-01-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240119'
+  res: species
+  date: '2024-01-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240120'
+  res: species
+  date: '2024-01-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240121'
+  res: species
+  date: '2024-01-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240124'
+  res: species
+  date: '2024-01-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240125'
+  res: species
+  date: '2024-01-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240126'
+  res: species
+  date: '2024-01-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240127'
+  res: species
+  date: '2024-01-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240128'
+  res: species
+  date: '2024-01-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240129'
+  res: species
+  date: '2024-01-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240130'
+  res: species
+  date: '2024-01-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240131'
+  res: species
+  date: '2024-01-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240201'
+  res: species
+  date: '2024-02-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240202'
+  res: species
+  date: '2024-02-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240203'
+  res: species
+  date: '2024-02-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240204'
+  res: species
+  date: '2024-02-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240205'
+  res: species
+  date: '2024-02-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240206'
+  res: species
+  date: '2024-02-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240207'
+  res: species
+  date: '2024-02-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240208'
+  res: species
+  date: '2024-02-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240209'
+  res: species
+  date: '2024-02-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240211'
+  res: species
+  date: '2024-02-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240212'
+  res: species
+  date: '2024-02-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240213'
+  res: species
+  date: '2024-02-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240214'
+  res: species
+  date: '2024-02-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240215'
+  res: species
+  date: '2024-02-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240216'
+  res: species
+  date: '2024-02-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240218'
+  res: species
+  date: '2024-02-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240219'
+  res: species
+  date: '2024-02-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240220'
+  res: species
+  date: '2024-02-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240221'
+  res: species
+  date: '2024-02-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240222'
+  res: species
+  date: '2024-02-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240227'
+  res: species
+  date: '2024-02-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240228'
+  res: species
+  date: '2024-02-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240301'
+  res: species
+  date: '2024-03-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240303'
+  res: species
+  date: '2024-03-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240304'
+  res: species
+  date: '2024-03-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240305'
+  res: species
+  date: '2024-03-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240306'
+  res: species
+  date: '2024-03-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240308'
+  res: species
+  date: '2024-03-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240309'
+  res: species
+  date: '2024-03-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240310'
+  res: species
+  date: '2024-03-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240311'
+  res: species
+  date: '2024-03-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240312'
+  res: species
+  date: '2024-03-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240313'
+  res: species
+  date: '2024-03-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240314'
+  res: species
+  date: '2024-03-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240315'
+  res: species
+  date: '2024-03-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240317'
+  res: species
+  date: '2024-03-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240319'
+  res: species
+  date: '2024-03-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240323'
+  res: species
+  date: '2024-03-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240324'
+  res: species
+  date: '2024-03-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240325'
+  res: species
+  date: '2024-03-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240326'
+  res: species
+  date: '2024-03-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240327'
+  res: species
+  date: '2024-03-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240328'
+  res: species
+  date: '2024-03-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240329'
+  res: species
+  date: '2024-03-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240330'
+  res: species
+  date: '2024-03-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240331'
+  res: species
+  date: '2024-03-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240401'
+  res: species
+  date: '2024-04-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240402'
+  res: species
+  date: '2024-04-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240405'
+  res: species
+  date: '2024-04-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240406'
+  res: species
+  date: '2024-04-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240407'
+  res: species
+  date: '2024-04-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240409'
+  res: species
+  date: '2024-04-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240410'
+  res: species
+  date: '2024-04-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240412'
+  res: species
+  date: '2024-04-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240413'
+  res: species
+  date: '2024-04-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240418'
+  res: species
+  date: '2024-04-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240419'
+  res: species
+  date: '2024-04-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240426'
+  res: species
+  date: '2024-04-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240427'
+  res: species
+  date: '2024-04-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240428'
+  res: species
+  date: '2024-04-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240429'
+  res: species
+  date: '2024-04-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240430'
+  res: species
+  date: '2024-04-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240501'
+  res: species
+  date: '2024-05-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240502'
+  res: species
+  date: '2024-05-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240503'
+  res: species
+  date: '2024-05-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240505'
+  res: species
+  date: '2024-05-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240506'
+  res: species
+  date: '2024-05-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240507'
+  res: species
+  date: '2024-05-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240508'
+  res: species
+  date: '2024-05-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240512'
+  res: species
+  date: '2024-05-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240513'
+  res: species
+  date: '2024-05-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240514'
+  res: species
+  date: '2024-05-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240515'
+  res: species
+  date: '2024-05-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240516'
+  res: species
+  date: '2024-05-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240517'
+  res: species
+  date: '2024-05-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240518'
+  res: species
+  date: '2024-05-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240519'
+  res: species
+  date: '2024-05-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240521'
+  res: species
+  date: '2024-05-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240522'
+  res: species
+  date: '2024-05-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240523'
+  res: species
+  date: '2024-05-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240524'
+  res: species
+  date: '2024-05-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240525'
+  res: species
+  date: '2024-05-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240528'
+  res: species
+  date: '2024-05-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240529'
+  res: species
+  date: '2024-05-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240530'
+  res: species
+  date: '2024-05-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240531'
+  res: species
+  date: '2024-05-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240602'
+  res: species
+  date: '2024-06-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240604'
+  res: species
+  date: '2024-06-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240605'
+  res: species
+  date: '2024-06-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240606'
+  res: species
+  date: '2024-06-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240607'
+  res: species
+  date: '2024-06-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240608'
+  res: species
+  date: '2024-06-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240609'
+  res: species
+  date: '2024-06-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240611'
+  res: species
+  date: '2024-06-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240612'
+  res: species
+  date: '2024-06-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240613'
+  res: species
+  date: '2024-06-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240614'
+  res: species
+  date: '2024-06-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240616'
+  res: species
+  date: '2024-06-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240617'
+  res: species
+  date: '2024-06-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240618'
+  res: species
+  date: '2024-06-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240619'
+  res: species
+  date: '2024-06-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240620'
+  res: species
+  date: '2024-06-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240621'
+  res: species
+  date: '2024-06-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240622'
+  res: species
+  date: '2024-06-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240624'
+  res: species
+  date: '2024-06-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240625'
+  res: species
+  date: '2024-06-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240626'
+  res: species
+  date: '2024-06-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240627'
+  res: species
+  date: '2024-06-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240628'
+  res: species
+  date: '2024-06-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240630'
+  res: species
+  date: '2024-06-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240701'
+  res: species
+  date: '2024-07-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240702'
+  res: species
+  date: '2024-07-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240703'
+  res: species
+  date: '2024-07-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240704'
+  res: species
+  date: '2024-07-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240705'
+  res: species
+  date: '2024-07-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240707'
+  res: species
+  date: '2024-07-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240708'
+  res: species
+  date: '2024-07-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240709'
+  res: species
+  date: '2024-07-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240710'
+  res: species
+  date: '2024-07-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240711'
+  res: species
+  date: '2024-07-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240719'
+  res: species
+  date: '2024-07-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240720'
+  res: species
+  date: '2024-07-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240721'
+  res: species
+  date: '2024-07-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240722'
+  res: species
+  date: '2024-07-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240723'
+  res: species
+  date: '2024-07-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240724'
+  res: species
+  date: '2024-07-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240725'
+  res: species
+  date: '2024-07-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240727'
+  res: species
+  date: '2024-07-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240728'
+  res: species
+  date: '2024-07-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240729'
+  res: species
+  date: '2024-07-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240730'
+  res: species
+  date: '2024-07-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240731'
+  res: species
+  date: '2024-07-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240801'
+  res: species
+  date: '2024-08-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240803'
+  res: species
+  date: '2024-08-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240804'
+  res: species
+  date: '2024-08-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240805'
+  res: species
+  date: '2024-08-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240806'
+  res: species
+  date: '2024-08-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240807'
+  res: species
+  date: '2024-08-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240808'
+  res: species
+  date: '2024-08-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240809'
+  res: species
+  date: '2024-08-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240810'
+  res: species
+  date: '2024-08-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240811'
+  res: species
+  date: '2024-08-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240812'
+  res: species
+  date: '2024-08-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240813'
+  res: species
+  date: '2024-08-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240814'
+  res: species
+  date: '2024-08-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240815'
+  res: species
+  date: '2024-08-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240816'
+  res: species
+  date: '2024-08-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240817'
+  res: species
+  date: '2024-08-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240818'
+  res: species
+  date: '2024-08-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240819'
+  res: species
+  date: '2024-08-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240820'
+  res: species
+  date: '2024-08-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240821'
+  res: species
+  date: '2024-08-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240822'
+  res: species
+  date: '2024-08-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240823'
+  res: species
+  date: '2024-08-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240828'
+  res: species
+  date: '2024-08-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240829'
+  res: species
+  date: '2024-08-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240830'
+  res: species
+  date: '2024-08-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240831'
+  res: species
+  date: '2024-08-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240901'
+  res: species
+  date: '2024-09-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240902'
+  res: species
+  date: '2024-09-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240903'
+  res: species
+  date: '2024-09-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240904'
+  res: species
+  date: '2024-09-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240905'
+  res: species
+  date: '2024-09-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240906'
+  res: species
+  date: '2024-09-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240907'
+  res: species
+  date: '2024-09-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240908'
+  res: species
+  date: '2024-09-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240909'
+  res: species
+  date: '2024-09-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240910'
+  res: species
+  date: '2024-09-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240911'
+  res: species
+  date: '2024-09-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240912'
+  res: species
+  date: '2024-09-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240913'
+  res: species
+  date: '2024-09-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240914'
+  res: species
+  date: '2024-09-14'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240915'
+  res: species
+  date: '2024-09-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240916'
+  res: species
+  date: '2024-09-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240917'
+  res: species
+  date: '2024-09-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240918'
+  res: species
+  date: '2024-09-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240919'
+  res: species
+  date: '2024-09-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240920'
+  res: species
+  date: '2024-09-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240922'
+  res: species
+  date: '2024-09-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240923'
+  res: species
+  date: '2024-09-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20240924'
+  res: species
+  date: '2024-09-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241001'
+  res: species
+  date: '2024-10-01'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241002'
+  res: species
+  date: '2024-10-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241003'
+  res: species
+  date: '2024-10-03'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241004'
+  res: species
+  date: '2024-10-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241005'
+  res: species
+  date: '2024-10-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241006'
+  res: species
+  date: '2024-10-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241008'
+  res: species
+  date: '2024-10-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241009'
+  res: species
+  date: '2024-10-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241012'
+  res: species
+  date: '2024-10-12'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241013'
+  res: species
+  date: '2024-10-13'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241015'
+  res: species
+  date: '2024-10-15'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241016'
+  res: species
+  date: '2024-10-16'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241017'
+  res: species
+  date: '2024-10-17'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241018'
+  res: species
+  date: '2024-10-18'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241019'
+  res: species
+  date: '2024-10-19'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241020'
+  res: species
+  date: '2024-10-20'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241021'
+  res: species
+  date: '2024-10-21'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241022'
+  res: species
+  date: '2024-10-22'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241023'
+  res: species
+  date: '2024-10-23'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241024'
+  res: species
+  date: '2024-10-24'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241025'
+  res: species
+  date: '2024-10-25'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241026'
+  res: species
+  date: '2024-10-26'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241027'
+  res: species
+  date: '2024-10-27'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241028'
+  res: species
+  date: '2024-10-28'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241029'
+  res: species
+  date: '2024-10-29'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241030'
+  res: species
+  date: '2024-10-30'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241031'
+  res: species
+  date: '2024-10-31'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241102'
+  res: species
+  date: '2024-11-02'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241104'
+  res: species
+  date: '2024-11-04'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241105'
+  res: species
+  date: '2024-11-05'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241106'
+  res: species
+  date: '2024-11-06'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241107'
+  res: species
+  date: '2024-11-07'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241108'
+  res: species
+  date: '2024-11-08'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241109'
+  res: species
+  date: '2024-11-09'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241110'
+  res: species
+  date: '2024-11-10'
+  license: CC BY 4.0
+  class: 'R: data.frame'
+- version: '20241111'
+  res: species
+  date: '2024-11-11'
+  license: CC BY 4.0
+  class: 'R: data.frame'
 
 languages:
 - 'null'
@@ -2648,7 +4038,11 @@ Python code!
 
 <div class="column is-4 box" markdown="1" style="text-align:center">
 
-<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/{{page.logo}}" style="max-width:250px">
+{% if page.logo != "null" %}
+
+{% else %}
+<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/generic.svg" style="max-width:200px">
+{% endif %}
 
 ##### Coordinates
 

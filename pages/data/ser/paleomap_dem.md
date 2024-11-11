@@ -15,9 +15,19 @@ products:
   date: '2018-08-01'
   license: CC BY 4.0
   class: 'R: RasterArray'
+- version: v24221
+  res: '1'
+  date: '2024-08-18'
+  license: CC BY 4.0
+  class: 'R: RasterArray'
 - version: '20180801'
   res: '0.1'
   date: '2018-08-01'
+  license: CC BY 4.0
+  class: 'R: RasterArray'
+- version: v24221
+  res: '0.1'
+  date: '2024-08-18'
   license: CC BY 4.0
   class: 'R: RasterArray'
 
@@ -93,7 +103,11 @@ Python code!
 
 <div class="column is-4 box" markdown="1" style="text-align:center">
 
-<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/{{page.logo}}" style="max-width:250px">
+{% if page.logo != "null" %}
+
+{% else %}
+<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/generic.svg" style="max-width:200px">
+{% endif %}
 
 ##### Coordinates
 

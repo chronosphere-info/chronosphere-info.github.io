@@ -3,12 +3,14 @@ layout: post
 title:  "Ancient Reef Traits Database"
 date:   2023-11-05 18:02:37 +0200
 categories: update
-description: About the new webpage.
+description: New data items.
 image: ../images/chronos_logos/art_logo.png
+author: Chronosphere
 ---
 
 
 The Ancient Reef Traits Database is now accessible via the chronosphere! 
+
 
 <div class="columns">
 <div class="column is-10" markdown="1">
@@ -21,3 +23,5 @@ Check out available data [here]({{site.url}}{{site.baseurl}}/data/AncientReefTra
 
 </div>
 </div>
+
+	

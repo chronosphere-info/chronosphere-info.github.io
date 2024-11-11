@@ -14,6 +14,10 @@ series:
   name: Global Mean Surface Temperature
 - code: areas
   name: Areas calculated from the PaleoMAP paleocoastline reconstructions.
+- code: paleoatlas
+  name: PALEOMAP PaleoAtlas for GPlates
+- code: rainfall
+  name: PALEOMAP Paleorainfall (Total Annual Precipitation)
 
 description: placeholder_paleomap_descr.file
 sourceURL: www.scotese.com

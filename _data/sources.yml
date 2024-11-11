@@ -8,8 +8,11 @@
     sourceName: The PALEOMAP project
   - src: SOM-zaffos-fragmentation
     sourceName: The continent fragmentation results of Zaffos et al. 2017
-  - src: EarthByte
-    sourceName: 'EarthByte: Building a Virtual Earth'
+  - src: GPlates
+    sourceName: 'GPlates: Building a virtual Earth through deep time'
+  - src: REF-scotese2021paleotemperatures
+    sourceName: 'Phanerozoic paleotemperatures: The earth’s changing climate during
+      the last 540 million years'
 - name: Traits
   content:
   - src: SOM-reddin-sensitivity
@@ -32,6 +35,17 @@
     sourceName: Triton Database
   - src: neptune
     sourceName: Neptune Sandbox Berlin
+  - src: forcis
+    sourceName: Foraminifera Response to Climatic Stress
+  - src: REF-foote2024bivalves
+    sourceName: Data from Ecological structure of diversity-dependent diversification
+      in Phanerozoic marine bivalves by
+  - src: ForCenS
+    sourceName: Compilation of planktonic foraminifera census counts in marine surface
+      sediment samples
+  - src: ForCenS-LGM
+    sourceName: A compilation of planktonic foraminifera assemblage composition for
+      the Last Glacial Maximum
 - name: Geography
   content:
   - src: NaturalEarth
@@ -45,4 +59,19 @@
     sourceName: Marine Ecoregions of the World
   - src: myers-hotspots
     sourceName: Biodiversity Hotspots (sensu Myers)
+- name: Anthropogenic Impacts
+  content:
+  - src: GlobalCoralBleachingDB
+    sourceName: Global Coral Bleaching Database (1980-2020)
+- name: Geochemistry
+  content:
+  - src: REF-song2019temperature
+    sourceName: Temperature data from Song et al.
+  - src: PhanSST
+    sourceName: PhanSST - A global database of Phanerozoic sea surface temperature
+      proxy data
+  - src: REF-grossman2022temperatures
+    sourceName: Ocean temperatures through the Phanerozoic reassessed
+  - src: REF-veizer2015temperatures
+    sourceName: Temperatures and oxygen isotopic composition of Phanerozoic oceans
 

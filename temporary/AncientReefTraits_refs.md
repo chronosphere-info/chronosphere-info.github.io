@@ -98,7 +98,11 @@ Python code!
 
 <div class="column is-4 box" markdown="1" style="text-align:center">
 
-<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/{{page.logo}}" style="max-width:250px">
+{% if page.logo != "null" %}
+
+{% else %}
+<img src="{{site.url}}{{site.baseurl}}/images/chronos_logos/generic.svg" style="max-width:200px">
+{% endif %}
 
 ##### Coordinates
 
