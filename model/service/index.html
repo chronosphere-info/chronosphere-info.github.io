@@ -23,20 +23,20 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css">
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Ocean temperatures through the Phanerozoic reassessed | chronosphere</title>
+<title>Service | chronosphere</title>
 <meta name="generator" content="Jekyll v4.2.2" />
-<meta property="og:title" content="Ocean temperatures through the Phanerozoic reassessed" />
+<meta property="og:title" content="Service" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="placeholder_paleomap_descr.file" />
-<meta property="og:description" content="placeholder_paleomap_descr.file" />
-<link rel="canonical" href="https://chronosphere.info/data/REF-grossman2022temperatures/" />
-<meta property="og:url" content="https://chronosphere.info/data/REF-grossman2022temperatures/" />
+<meta name="description" content="Evolving Earth System Variables" />
+<meta property="og:description" content="Evolving Earth System Variables" />
+<link rel="canonical" href="https://chronosphere.info/model/service/" />
+<meta property="og:url" content="https://chronosphere.info/model/service/" />
 <meta property="og:site_name" content="chronosphere" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Ocean temperatures through the Phanerozoic reassessed" />
+<meta property="twitter:title" content="Service" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"placeholder_paleomap_descr.file","headline":"Ocean temperatures through the Phanerozoic reassessed","url":"https://chronosphere.info/data/REF-grossman2022temperatures/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Evolving Earth System Variables","headline":"Service","url":"https://chronosphere.info/model/service/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <!-- head scripts -->
@@ -84,7 +84,7 @@
                             
                             <a href="/model/datasets/" class="navbar-item ">Datasets</a>
                             
-                            <a href="/model/service/" class="navbar-item ">Service</a>
+                            <a href="/model/service/" class="navbar-item is-active">Service</a>
                             
                             <a href="/model/variables/" class="navbar-item ">Variables</a>
                             
@@ -94,7 +94,7 @@
                 
                     
                     <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="/data/" class="navbar-link is-active">Data</a>
+                        <a href="/data/" class="navbar-link ">Data</a>
                         <div class="navbar-dropdown">
                             
                             <a href="/data/" class="navbar-item ">Available data</a>
@@ -140,7 +140,7 @@
 </nav>
 
     
-        <section class="hero  is-medium  is-bold is-primary" >
+        <section class="hero  is-medium  is-bold is-primary"  style="background: url('/images/backgrounds/lava.jpg') no-repeat center center; background-size: cover;" >
     <div style="background: linear-gradient(#fff0,#ffff)">
     <div class="hero-body ">
         <div class="container">
@@ -148,7 +148,7 @@
 			<div class="column is-1">
 			</div>
 			<div class="column is-7">
-			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">Ocean temperatures through the Phanerozoic reassessed</h1>
+			  <h1 class="title is-2" style="filter: drop-shadow(2px 2px 3px #000d)">Service</h1>
 			  <p class="subtitle is-3"  style="filter: drop-shadow(2px 2px 3px #000d)"></p>
 			  
 			</div>
@@ -177,91 +177,47 @@
                     
                     
 <div class="content">
-    <script src="https://chronosphere.info/assets/js/jquery-3.7.0.js"></script>
-<p><!--Add JQuery-->
-<script src="https://chronosphere.info/assets/js/jquery.dataTables.min.js"></script></p>
-<link rel="stylesheet" type="text/css" href="https://chronosphere.info/assets/css/jquery.dataTables.min.css" />
+    <h1 id="the-current-implementation">The current implementation</h1>
 
 <div class="columns">
-<div class="column is-8">
 
-    <h2 id="ocean-temperatures-through-the-phanerozoic-reassessed">Ocean temperatures through the Phanerozoic reassessed</h2>
+<div class="column is-6">
 
-    <hr />
+    <h2 id="overview">Overview</h2>
 
-    <p>placeholder_paleomap_descr.file</p>
+    <p>This page includes some of the technical details that the current implementation of the chronosphere. Please note that the system is in its beta testing phase (publicly usable, but still unstable).</p>
+
+    <p>Accordingly, many of the choices for back-end development are not final, and were selected for maximum cost-efficiency. The sheer number items to record requires flexibility from the data model. Although the major <a href="https://chronosphere.info//model/datasets/">structural entities</a> are now frozen, their attributes, related fields and entities will probably be extended.</p>
+
+    <p>Simply put, the chronosphere enhances data access by allowing users to replicate a recorded instantiation of a programming object on their computers.</p>
 
   </div>
 
-<div class="column is-4 box" style="text-align:center">
-<img src="https://chronosphere.info/images/chronos_logos/" style="max-width:250px" />
+<div class="column is-6">
 
-<table style="text-align: left">
-<tr><th>src:</th><th><code>REF-grossman2022temperatures</code></th></tr>
-<tr><td>URL:</td><td style="overflow-wrap:break-word"><a href="https://www.nature.com/articles/s41598-022-11493-1#Sec10">https://www.nature.com/articles/s41598-022-11493-1#Sec10</a></td></tr>
-<tr><td>Default series:</td><td><code>carbonates</code></td></tr>
+    <p><img src="https://chronosphere.info//images/chronosphere/data_service.svg" alt="" /></p>
 
-</table>
-</div>
+  </div>
+
 </div>
 
-<h2 id="available-data-series">Available data series</h2>
+<h2 id="relational-metadatabase">Relational Metadatabase</h2>
 
-<table class="display" id="my-table">
+<p>The current implementation of the chronosphere (v2.0) records the metadata about the incorportated data in an SQLite relational database. This medium-complexity database is present only as a back-end tool for organizing and collecting data and for producing structures that users interact with. <a href="https://chronosphere.info/">This website</a> is also built using this relational database using static data files.</p>
 
-<thead>
-<tr><th>Series code </th> <th>Series name </th><th>Default class(es)</th></tr>
+<h2 id="registry-files">Registry files</h2>
 
-</thead>
-<tbody>
+<p>Registry files are produced using this relational database. The registry files are made available on the internet, and they can be accessed with the chronosphere’s <a href="https://chronosphere.info/r_client/">client (R package)</a>. These source- (<code class="language-plaintext highlighter-rouge">src</code>) specific files contain the information needed to access the publicly available <em>data files</em> and the necessary <em>code</em> to import these.</p>
 
+<h2 id="data-files">Data files</h2>
 
+<p>The chronosphere aims at providing access to data files that are published and archived on a scientific repository (have digital object identifiers, <a href="https://www.doi.org/">DOI</a>s), examples of these include <a href="https://zenodo.org/">Zenodo</a>, <a href="">FigShare</a>, <a href="">OSF</a>, and <a href="">Pangea</a></p>
 
-<tr style="background-color:#eee">
+<h2 id="code-files">Code files</h2>
 
+<p>R code which Code</p>
 
-<td>
-<code>carbonates</code>
-</td>
-
-<td>
-
-<strong><a href="https://chronosphere.info/data/REF-grossman2022temperatures/carbonates/">Appendix 1. Oxygen and carbon isotopic compositions of biogenic carbonates and sample information.</a></strong> <i>(default)</i>
-
-</td>
-
-<td>
-</td>
-
-</tr>
-
-
-
-<tr>
-
-
-<td>
-<code>phosphates</code>
-</td>
-
-<td>
-
-<a href="https://chronosphere.info/data/REF-grossman2022temperatures/phosphates/">Appendix 2. Oxygen isotope compositions of biogenic phosphates and sample information.</a>
-
-</td>
-
-<td>
-</td>
-
-</tr>
-
-
-</tbody>
-</table>
-
-<script>
-new DataTable('#my-table');
-</script>
+<h2 id="known-issues">Known issues</h2>
 
 
 </div>

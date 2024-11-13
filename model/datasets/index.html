@@ -71,7 +71,7 @@
                             
                             <a href="/about/" class="navbar-item ">The chronosphere</a>
                             
-                            <a href="/about/related/" class="navbar-item ">Related projects</a>
+                            <a href="/related/" class="navbar-item ">Related projects</a>
                             
                         </div>
                     </div>
@@ -84,20 +84,9 @@
                             
                             <a href="/model/datasets/" class="navbar-item is-active">Datasets</a>
                             
+                            <a href="/model/service/" class="navbar-item ">Service</a>
+                            
                             <a href="/model/variables/" class="navbar-item ">Variables</a>
-                            
-                            <a href="/model/docs/" class="navbar-item ">Documentation</a>
-                            
-                        </div>
-                    </div>
-                    
-                
-                    
-                    <div class="navbar-item has-dropdown is-hoverable ">
-                        <a href="" class="navbar-link ">Use cases</a>
-                        <div class="navbar-dropdown">
-                            
-                            <a href="/uses/" class="navbar-item ">Result tracing</a>
                             
                         </div>
                     </div>
@@ -125,10 +114,6 @@
                             
                         </div>
                     </div>
-                    
-                
-                    
-                    <a href="/contact/" class="navbar-item ">Contact</a>
                     
                 
                 
@@ -190,26 +175,23 @@
 
 <aside class="menu">
 
-    <p class="menu-label">Data</p>
+    <p class="menu-label">Datasets</p>
     <ul class="menu-list">
         
         <li>
-            <a href="" class="">Pages</a>
+            <a href="" class="">Structure</a>
             
             <ul>
                 
-                <li><a href="/" class="">Source details</a></li>
+                <li><a href="/model/datasets/#1-data-items" class="">1. Items</a></li>
                 
-                <li><a href="/#description" class="">Series Description</a></li>
+                <li><a href="/model/datasets/#2-data-products" class="">2. Products</a></li>
                 
-                <li><a href="/#products" class="">Data products</a></li>
+                <li><a href="/model/datasets/#3-data-series" class="">3. Series</a></li>
+                
+                <li><a href="/model/datasets/#4-data-series" class="">4. Sources</a></li>
                 
             </ul>
-            
-        </li>
-        
-        <li>
-            <a href="/blog/" class="">Blog</a>
             
         </li>
             
@@ -225,19 +207,39 @@
                     
                     
 <div class="content">
-    <h1 id="structure">Structure</h1>
+    <p>Enabling easy and reproducible access to datasets is the primary purpose of the chronosphere. But what do we mean by accessing a dataset?</p>
+
+<h1 id="structure">Structure</h1>
+
+<p>The structure of the chronosphere was designed from the application point of view: how researchers would like to use data that is already shared. Identifiers were desined to be both memorable, and machine-readable. These are organized in a hierarchy that can be thought of as coordinates to find a specific data item.</p>
 
 <h2 id="1-data-items">1. Data <em>Items</em></h2>
 
-<p>Items represent the lowest-level entities of the chronosphere framework. A data <strong>item</strong> is a programming object-level representation of a dataset with a definite structure, i.e. a programming class. Users (i.e. researchers or analysts) interact with <strong>items</strong>.</p>
+<div class="columns">
 
-<p><strong>Items</strong> are imported by a client, which executes some code that instantiates the object. They are typically read in from <em>data files</em> and/or structured by some <em>code</em> that is assigned to <strong>item</strong>. A programming <em>class</em> and some <em>code</em> is always mapped to an <strong>item</strong>, and data files can be.</p>
+<div class="column is-6">
+
+    <p>Items represent the lowest-level entities of the chronosphere framework. A data <strong>item</strong> is a programming object-level representation of a dataset with a definite structure, i.e. a programming class. Users (i.e. researchers or analysts) interact with <strong>items</strong>.</p>
+
+    <p><strong>Items</strong> are imported by a client, which executes some code that instantiates the object. They are typically read in from <em>data files</em> and/or structured by some <em>code</em> that is assigned to <strong>item</strong>. A programming <em>class</em> and some <em>code</em> is always mapped to an <strong>item</strong>, and data files can be.</p>
+
+  </div>
+
+<div class="column is-6">
+
+    <p><img src="https://chronosphere.info/images/chronosphere/data_model-01.png" alt="The basic data structures of the chronosphere" /></p>
+
+    <p><em>The data structures of the chronosphere.</em></p>
+
+  </div>
+
+</div>
 
 <h2 id="2-data-products">2. Data <em>Products</em></h2>
 
 <p>Although <strong>items</strong> represent the basic technical units, the fundamental semantic entity of the chronosphere is the data <strong>product</strong>. The product represents colloquial “data” that represent a certain amount of information: it does not matter whether a <code class="language-plaintext highlighter-rouge">.csv</code> or <code class="language-plaintext highlighter-rouge">.parquet</code> file is used to store the same data or whether it is present in the form of a <code class="language-plaintext highlighter-rouge">Pandas.DataFrame</code> or an R <code class="language-plaintext highlighter-rouge">data.table</code>. If the content is the same, all represent the same data product.</p>
 
-<p>Data products have well-defined boundaries in terms of content, size and meaning. The abtract data <code class="language-plaintext highlighter-rouge">products</code> are always manifeested in an <code class="language-plaintext highlighter-rouge">item</code>.</p>
+<p>Data products have well-defined boundaries in terms of content, size and meaning. The abtract data <code class="language-plaintext highlighter-rouge">products</code> always manifest as an <code class="language-plaintext highlighter-rouge">item</code>.</p>
 
 <p>Represent the state-of-the-art at a given point in time and can always be assigned to a date of finalization publication, and or a <em>version</em> identifier. They can also be altered in slight ways fo fulfil a specific function (e.g. <em>resolution</em>).</p>
 
@@ -261,41 +263,35 @@
   <thead>
     <tr>
       <th>Coordinate</th>
-      <th> </th>
+      <th>code</th>
       <th>example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Source</td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">src</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Series</td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">ser</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Product</td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">ver</code> + <code class="language-plaintext highlighter-rouge">res</code></td>
       <td> </td>
     </tr>
     <tr>
-      <td>item</td>
-      <td> </td>
+      <td>Item</td>
+      <td><code class="language-plaintext highlighter-rouge">class</code> + <code class="language-plaintext highlighter-rouge">ext</code></td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
-<h1 id="recommendations">Recommendations</h1>
-
-<ul>
-  <li>For publications</li>
-</ul>
-
-<p>Download the data that you use with the</p>
+<h1 id="future-plans">Future plans</h1>
 
 </div>
                 </div>
@@ -322,7 +318,7 @@
             
             <div class="column has-text-centered">
                 <div>
-                    <a href="/imprint/" class="link">Imprint</a>
+                    <a href="/imprint/" class="link">Imprint and Contact</a>
                 </div>
             </div>
             
@@ -330,7 +326,7 @@
         
 
         <div class="content is-small has-text-centered">
-
+            <p class="">Last updated: 2024-11-13 16:12.</a></p>
         </div>
     </div>
 </footer>
