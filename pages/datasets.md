@@ -1,25 +1,47 @@
 ---
 layout: page
 title: Datasets 
-menubar: data_categ
+menubar: dataset_sidebar
 hero_image: "/images/backgrounds/mountain.jpg"
 permalink: /model/datasets/
 ---
 
 
+Enabling easy and reproducible access to datasets is the primary purpose of the chronosphere. But what do we mean by accessing a dataset? 
+
+
 # Structure
 
+The structure of the chronosphere was designed from the application point of view: how researchers would like to use data that is already shared. Identifiers were desined to be both memorable, and machine-readable. These are organized in a hierarchy that can be thought of as coordinates to find a specific data item.
+
+
 ## 1. Data *Items*
+
+<div class="columns">
+
+<div class="column is-6"  markdown="1">
 
 Items represent the lowest-level entities of the chronosphere framework. A data **item** is a programming object-level representation of a dataset with a definite structure, i.e. a programming class. Users (i.e. researchers or analysts) interact with **items**. 
 
 **Items** are imported by a client, which executes some code that instantiates the object. They are typically read in from *data files* and/or structured by some *code* that is assigned to **item**. A programming *class* and some *code* is always mapped to an **item**, and data files can be.
 
+</div>
+
+<div class="column is-6"  markdown="1">
+
+![The basic data structures of the chronosphere]({{site.url}}{{site.baseurl}}/images/chronosphere/data_model-01.png)
+
+*The data structures of the chronosphere.*
+
+</div>
+
+</div>
+
 ## 2. Data *Products*
 
 Although **items** represent the basic technical units, the fundamental semantic entity of the chronosphere is the data **product**. The product represents colloquial "data" that represent a certain amount of information: it does not matter whether a `.csv` or `.parquet` file is used to store the same data or whether it is present in the form of a `Pandas.DataFrame` or an R `data.table`. If the content is the same, all represent the same data product.   
 
-Data products have well-defined boundaries in terms of content, size and meaning. The abtract data `products` are always manifeested in an `item`. 
+Data products have well-defined boundaries in terms of content, size and meaning. The abtract data `products` always manifest as an `item`. 
 
 Represent the state-of-the-art at a given point in time and can always be assigned to a date of finalization publication, and or a *version* identifier. They can also be altered in slight ways fo fulfil a specific function (e.g. *resolution*). 
 
@@ -40,16 +62,13 @@ Items can be located by referring to its coordinates - usually from top- to lowe
 
 Shorthands are used to identify items.
 
-| Coordinate |   | example |
-|------------|---|---------|
-| Source     |   |         |
-| Series     |   |         |
-| Product    |   |         |
-| item       |   |         |
+| Coordinate | code            | example |
+|------------|-----------------|---------|
+| Source     | `src`           |         |
+| Series     | `ser`           |         |
+| Product    | `ver` + `res`   |         |
+| Item       | `class` + `ext` |         |
 
 
-# Recommendations
 
-- For publications 
-
-Download the data that you use with the 
+# Future plans

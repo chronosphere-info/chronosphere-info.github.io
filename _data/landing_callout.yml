@@ -6,11 +6,11 @@ items:
     call_to_action_link: /#access-data-items
   - title: Tracing Data Evolution  
     subtitle: Enhancing Research Replicability  
-    icon: fa-route
+    icon: fa-history
     call_to_action_name: Tracing Data Evolution ⬇
     call_to_action_link: /#tracing-data-evolution
   - title: Formal Variables 
     subtitle: Systematics of Earth System Data
-    icon: fa-globe
+    icon: fa-subscript
     call_to_action_name: Formal variables ⬇
     call_to_action_link: /#formal-variables

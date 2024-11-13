@@ -2,20 +2,20 @@
   dropdown:
   - name: The chronosphere 
     link: /about/
-  - name: Related projects 
-    link: /about/related/
+  - name: Related projects
+    link: /related/
 - name: Model
   dropdown:
    - name: Datasets 
      link: /model/datasets/
+   - name: Service
+     link: /model/service/
    - name: Variables 
      link: /model/variables/
-   - name: Documentation 
-     link: /model/docs/
-- name: Use cases
-  dropdown:
-   - name: Result tracing 
-     link: /uses/
+# - name: Use cases
+#   dropdown:
+#    - name: Result tracing
+#      link: /uses/
 - name: Data
   link: /data/
   dropdown:
@@ -27,5 +27,5 @@
   dropdown:
    - name: R package 
      link: https://chronosphere.info/r_client/
-- name: Contact 
-  link: /contact/
+# - name: Contact
+#   link: /contact/

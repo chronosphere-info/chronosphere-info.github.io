@@ -22,13 +22,10 @@ html{scroll-behavior:smooth}
 
 <i><sup>*</sup> from Χρόνος-σφαῖρα (gr.): time-orb </i>
 
-Earth systems are subject to continuous change that is natively incorporated in the data we use to describe and analyze our Planet's history, its current state and to predict its future. They are functions of time.
-They, however do not only depend on the physical, objective time but also on, the state of our degree of understanding. Our knowledge of the Earth System changes constantly, precious resources of humanity are invested in observation, analysis and simulation of Earth System variables, making them continuously evolve: their state is also a function of knowledge-time.
+Earth Systems are subject to continuous change. This universal nature is natively incorporated in the data we use to describe and analyze our Planet's history and its present state - as well as to predict its future. 
+The modelled representation of these systems (including what can be quantified as data), however, do not only depend on physical (objective) time, but also on the state of our degree of understanding. Our knowledge of the Earth System changes constantly, precious resources of humanity are invested in observation, analysis and simulation of Earth System data. In other words, these continuously evolve, the data, our understanding and *in-silico* representation are all function of knowledge-time. 
 
-The **chronosphere** is dedicated to the tracing of the evolution of Earth System Variables through knowledge time, enhancing reproducibility, replicability and robustness of Earth System research.
-To fill in the interdisciplinary gaps between  geoscience disciplines and help with the reuse of data and code, and promoting [FAIR](https://www.go-fair.org/fair-principles/) principles and open science.
-
-You can find more about the project [here]({{site.url}}{{site.baseurl}}/about/project/). 
+You can find more about the project's aim and history [here]({{site.url}}{{site.baseurl}}/about/). 
 
 <p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 </div>
@@ -46,12 +43,11 @@ You can find more about the project [here]({{site.url}}{{site.baseurl}}/about/pr
 
 # Access Data Items
 
-We work to facilitate programmatic analyses of large quantities of data. On the fundamental, practical level, the chronosphere is a data-distribution framework that allows the immediate access to hundreds of permanently deposited data products, directly instantiating them in users programming/analytical environments. This service depends on a metadata- and codebase, that links data files with code items and their dependencies.
+Much of today's discussion about data reuse revolve around proper practices to share information that we create - not about maximizing the utility of the already shared data.
 
-The chrononsphere is a research API, that makes code robust and portable.
+We intend to facilitate programmatic analyses of large quantities of Earth System data. On a practical level, the **chronosphere** is a data organisation and distribution service that allows the immediate access to hundreds of well-defined, permanently-deposited data *items*, and the immediate instantiation of these in users' analytical workspace (currently in the R programming environment). By promoting [FAIR](https://www.go-fair.org/fair-principles/) principles and open science with the reuse of data and computer code, we intend to help with filling the interdisciplinary gaps between geoscience disciplines.
 
-The data distribution framework is organized into three levels of primary entities: data items, data products and product series. Etc...
--how data products evolve
+This service depends on a metadata- and codebase, that links data files with code items, that are accessed remotely making the code built with them robust and extremely portable. The data distribution framework is organized around two levels of primary entities: exact data *items*, data *products*. Check out our [dataset data model]({{site.url}}{{site.baseurl}}/model/datasets/) if you are interested in learning more about these!
 
 <a href="{{site.url}}{{site.baseurl}}/r_client/#example"><button class="button is-primary" > Give it a shot! - access data with the chronosphere R package!</button></a>
 
@@ -91,15 +87,15 @@ The data distribution framework is organized into three levels of primary entiti
 
 <section class="section" markdown="1">
 
-<div class="columns">
-<div class="column is-8 secol" markdown="1">
 # Tracing Data Evolution
+
+The **chronosphere** is developed with the aim of tracing of the evolution of Earth System Variables through knowledge time. This long-term goal can only be met with enhanced reproducibility, and most importantly, with the robust replicability of results from Earth System research. 
 
 Besides the practicality of data distribution. The chronosphere is dedicated to the registration of data updates, and aims at
 
 These features should allow the development of a dynamic codebase that expresses our knowledge of planet Earth, making the assessment of a desired aspect of our planet availble on demand with the most up-to-date, customizable information.
-</div>
-</div>
+
+<p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 
 </section>
 
@@ -125,16 +121,4 @@ Technically these are functions that render information of some structure (the r
 <p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 
 </section>
-
-<section class="section" markdown="1">
-# Systematics of data
-
-Summary
-
-- Number of items
-- Number of databases
-- Number of variables
-
-</section>
-
 

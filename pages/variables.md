@@ -6,9 +6,14 @@ permalink: /model/variables/
 hero_image: "/images/backgrounds/rainforest.jpg"
 ---
 
-A variable is a function that maps one type of information to another. 
+
+## Earth System Variables
+
+Variables represent the highest-level of formal data organization. A variable is a function that maps one type of information to another. 
 
 The blueprint of a variable is its dimensionality: the dimensions of its **domain** (to what it maps things) and its **range** (what it maps). The entire Earth system can represented with a set of variables or system descriptors. 
+
+Theory is dependent on this.
 
 ## Examples
 
@@ -29,7 +34,6 @@ This variable (range: # of genera), domain (absolute time, set of organisms).
 ## Relationship to data items 
 
 The basic idea of the chronosphere is that every [data product]({{site.url}}{{site.baseurl}}/) can be described as a manifestation of a variable, i.e. it becomes a value that it takes. 
-
 
 
 

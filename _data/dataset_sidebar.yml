@@ -1,0 +1,12 @@
+- label: Datasets
+  items:
+    - name: Structure
+      items:
+        - name: 1. Items
+          link: "model/datasets/#1-data-items"
+        - name: 2. Products
+          link: "model/datasets/#2-data-products"
+        - name: 3. Series
+          link: "model/datasets/#3-data-series"
+        - name: 4. Sources
+          link: "model/datasets/#4-data-series"
