@@ -10,3 +10,5 @@
           link: "model/datasets/#3-data-series"
         - name: 4. Sources
           link: "model/datasets/#4-data-series"
+    - name: Example
+      link: "model/datasets/#example"

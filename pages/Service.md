@@ -42,7 +42,7 @@ Registry files are produced using this relational database. The registry files a
 
 ## Data files
 
-The chronosphere aims at providing access to data files that are published and archived on a scientific repository (have digital object identifiers, [DOI](https://www.doi.org/)s), examples of these include [Zenodo](https://zenodo.org/), [FigShare](), [OSF](), and [Pangea]().
+The chronosphere aims at providing access to data files that are published and archived on a scientific repository (have digital object identifiers, [DOI](https://www.doi.org/)s), examples of these include [Zenodo](https://zenodo.org/), [FigShare](https://figshare.com/), [OSF](https://osf.io/), and [Pangea](https://www.pangaea.de/).
 
 
 

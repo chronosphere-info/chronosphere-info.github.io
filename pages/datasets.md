@@ -47,28 +47,33 @@ Represent the state-of-the-art at a given point in time and can always be assign
 
 ## 3. Data *Series*
 
-Series are a set of *products* that are derived using specific rules - in many cases with the same programming pipeline, which applied to an updated set of data to create a specific data *product*. Examples include database API calls that compile the same table structure from the most up-to-date state of a database (such as series from the [Paleobiology Database]()), and named data products that are released at either regular or irregular intervals. Products within the same series are expected to have the same overall structure, but different content. 
+Series are a set of *products* that are derived using specific rules - in many cases with the same programming pipeline, which applied to an updated set of data to create a specific data *product*. Examples include database API calls that compile the same table structure from the most up-to-date state of a database (such as series from the [Paleobiology Database](https://paleobiodb.org/#/)), and named data products that are released at either regular or irregular intervals. Products within the same series are expected to have the same overall structure, but different content. 
  
-The definition of **series** has been one of the primary goals of the chronosphere: it allows the quick substitution of differently-versioned products of the same **series**, which is a technical prerequisite to [tracing scientific results]() through time in the face of changing data.   
+The definition of **series** has been one of the primary goals of the chronosphere: it allows the quick substitution of differently-versioned products of the same **series**, which is a technical prerequisite to tracing scientific results through time in the face of changing data.   
 
 
 ## 4. Data *Sources*
 
 **Sources** are either formal or informal entites that can be tied data structures. This level of hierarchy helps with organizing information and finding information that can be tied to an organization, a database or a scientific paper. 
 
-# Use
+# Example
 
-Items can be located by referring to its coordinates - usually from top- to lower-level of hierarchy. 
+Items can be located by referring to its coordinates - usually from top- to lower-level of hierarchy. Shorthand code are used to identify the levels.
 
-Shorthands are used to identify items.
+| Coordinate | code            | example                           |
+|------------|-----------------|-----------------------------------|
+| Source     | `src`           | `"paleomap"`                      |
+| Series     | `ser`           | `"dem"`                           |
+| Product    | `ver` + `res`   | `ver="v24221"`,`res=0.1`          |
+| Item       | `class` + `ext` | `class="RasterArray"`, `ext="nc"` |
 
-| Coordinate | code            | example |
-|------------|-----------------|---------|
-| Source     | `src`           |         |
-| Series     | `ser`           |         |
-| Product    | `ver` + `res`   |         |
-| Item       | `class` + `ext` |         |
+All these define a very specicific specific data item (PaleoDEMs of C. Scotese) that can be instantiated locally in R with this chunk of code :
 
+```
+library(chronosphere)
+paleodems <- fetch(src="paloemap", ser="dem", ver="v24221",res=0.1) # class and ext are defaults
+```
 
-
-# Future plans
+<div class="notification is-warning is-light" markdown="1">
+You can find the automatically prepared page for this data series [here]({{site.url}}{{site.baseurl}}/data/paleomap/dem/). Data items will be documented on this website, but this is still under construction. In the meantime, use the R package's `datasets()` function to access available data.
+</div>

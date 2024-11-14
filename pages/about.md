@@ -15,9 +15,9 @@ permalink: /about/
 <div class="columns">
 
 <div class="column is-10" markdown="1">
-The project was concieved within the second phase (2019-2022) of the [DFG Research Unit TERSANE (FOR 2332)](https://cnidaria.nat.uni-erlangen.de/wp/) which had the aim to unravel the connections between climatic changes and ancient extinction events. The original aim of the **chronosphere**, developed primarilly [Ádám T. Kocsis](https://adamtkocsis.com), within sub-project [SPex](https://cnidaria.nat.uni-erlangen.de/wp/index.php/project/research/project-spex/), was to make past climate model results available to be easilly incorporated in paleobiological studies. 
+The project was concieved within the second phase (2019-2022) of the [DFG Research Unit TERSANE (FOR 2332)](https://cnidaria.nat.uni-erlangen.de/wp/) which had the aim to unravel the connections between climatic changes and ancient extinction events. The original aim of the **chronosphere**, developed primarilly [Ádám T. Kocsis](https://palaeobiology.nat.fau.de/people/instructors/kocsis/), within sub-project [SPex](https://cnidaria.nat.uni-erlangen.de/wp/index.php/project/research/project-spex/), was to make past climate model results available to be easilly incorporated in paleobiological studies. 
 
-In its original form, the chronosphere was an R extension package, which was partitioned and became the [chronosphere](https://chronosphere.info/r_client/), [via](https://adamkocsis.github.io/via/) and [rgplates](https://adamkocsis.github.io/rgplates/) packages. The current implementation is in prototype stage and it is under beta (public) testing.
+In its original form, the chronosphere was an R extension package, which was partitioned and became the [chronosphere](https://chronosphere.info/r_client/), [via](https://adamkocsis.github.io/via/) and [rgplates](https://gplates.github.io/rgplates/) packages. The current implementation is in prototype stage and it is under beta (public) testing.
 </div>
 <div class="column is-2">
 <a href="https://cnidaria.nat.uni-erlangen.de/wp/"><img src="{{site.url}}{{site.baseurl}}/images/logos/tersane-proj.png"></a>
