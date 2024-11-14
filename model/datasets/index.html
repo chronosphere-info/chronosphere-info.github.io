@@ -188,6 +188,11 @@
             </ul>
             
         </li>
+        
+        <li>
+            <a href="/model/datasets/#example" class="">Example</a>
+            
+        </li>
             
     </ul>
 
@@ -239,19 +244,17 @@
 
 <h2 id="3-data-series">3. Data <em>Series</em></h2>
 
-<p>Series are a set of <em>products</em> that are derived using specific rules - in many cases with the same programming pipeline, which applied to an updated set of data to create a specific data <em>product</em>. Examples include database API calls that compile the same table structure from the most up-to-date state of a database (such as series from the <a href="">Paleobiology Database</a>), and named data products that are released at either regular or irregular intervals. Products within the same series are expected to have the same overall structure, but different content.</p>
+<p>Series are a set of <em>products</em> that are derived using specific rules - in many cases with the same programming pipeline, which applied to an updated set of data to create a specific data <em>product</em>. Examples include database API calls that compile the same table structure from the most up-to-date state of a database (such as series from the <a href="https://paleobiodb.org/#/">Paleobiology Database</a>), and named data products that are released at either regular or irregular intervals. Products within the same series are expected to have the same overall structure, but different content.</p>
 
-<p>The definition of <strong>series</strong> has been one of the primary goals of the chronosphere: it allows the quick substitution of differently-versioned products of the same <strong>series</strong>, which is a technical prerequisite to <a href="">tracing scientific results</a> through time in the face of changing data.</p>
+<p>The definition of <strong>series</strong> has been one of the primary goals of the chronosphere: it allows the quick substitution of differently-versioned products of the same <strong>series</strong>, which is a technical prerequisite to tracing scientific results through time in the face of changing data.</p>
 
 <h2 id="4-data-sources">4. Data <em>Sources</em></h2>
 
 <p><strong>Sources</strong> are either formal or informal entites that can be tied data structures. This level of hierarchy helps with organizing information and finding information that can be tied to an organization, a database or a scientific paper.</p>
 
-<h1 id="use">Use</h1>
+<h1 id="example">Example</h1>
 
-<p>Items can be located by referring to its coordinates - usually from top- to lower-level of hierarchy.</p>
-
-<p>Shorthands are used to identify items.</p>
+<p>Items can be located by referring to its coordinates - usually from top- to lower-level of hierarchy. Shorthand code are used to identify the levels.</p>
 
 <table>
   <thead>
@@ -265,27 +268,35 @@
     <tr>
       <td>Source</td>
       <td><code class="language-plaintext highlighter-rouge">src</code></td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">"paleomap"</code></td>
     </tr>
     <tr>
       <td>Series</td>
       <td><code class="language-plaintext highlighter-rouge">ser</code></td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">"dem"</code></td>
     </tr>
     <tr>
       <td>Product</td>
       <td><code class="language-plaintext highlighter-rouge">ver</code> + <code class="language-plaintext highlighter-rouge">res</code></td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">ver="v24221"</code>,<code class="language-plaintext highlighter-rouge">res=0.1</code></td>
     </tr>
     <tr>
       <td>Item</td>
       <td><code class="language-plaintext highlighter-rouge">class</code> + <code class="language-plaintext highlighter-rouge">ext</code></td>
-      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">class="RasterArray"</code>, <code class="language-plaintext highlighter-rouge">ext="nc"</code></td>
     </tr>
   </tbody>
 </table>
 
-<h1 id="future-plans">Future plans</h1>
+<p>All these define a very specicific specific data item (PaleoDEMs of C. Scotese) that can be instantiated locally in R with this chunk of code :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(chronosphere)
+paleodems &lt;- fetch(src="paloemap", ser="dem", ver="v24221",res=0.1) # class and ext are defaults
+</code></pre></div></div>
+
+<div class="notification is-warning is-light">
+  <p>You can find the automatically prepared page for this data series <a href="https://chronosphere.info/data/paleomap/dem/">here</a>. Data items will be documented on this website, but this is still under construction. In the meantime, use the R package’s <code class="language-plaintext highlighter-rouge">datasets()</code> function to access available data.</p>
+</div>
 
 </div>
                 </div>
@@ -320,7 +331,7 @@
         
 
         <div class="content is-small has-text-centered">
-            <p class="">Last updated: 2024-11-14 10:59.</a></p>
+            <p class="">Last updated: 2024-11-14.</a></p>
         </div>
     </div>
 </footer>
