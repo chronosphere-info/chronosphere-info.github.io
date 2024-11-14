@@ -71,8 +71,6 @@
                             
                             <a href="/about/" class="navbar-item is-active">The chronosphere</a>
                             
-                            <a href="/related/" class="navbar-item ">Related projects</a>
-                            
                         </div>
                     </div>
                     
@@ -86,8 +84,6 @@
                             
                             <a href="/model/service/" class="navbar-item ">Service</a>
                             
-                            <a href="/model/variables/" class="navbar-item ">Variables</a>
-                            
                         </div>
                     </div>
                     
@@ -98,8 +94,6 @@
                         <div class="navbar-dropdown">
                             
                             <a href="/data/" class="navbar-item ">Available data</a>
-                            
-                            <a href="/data/policy/" class="navbar-item ">Policy</a>
                             
                         </div>
                     </div>
@@ -185,35 +179,22 @@
 <div class="columns">
 
 <div class="column is-10">
-    <p>The project was concieved within the second phase (2019-2022) of the <a href="https://cnidaria.nat.uni-erlangen.de/wp/">DFG Research Unit TERSANE (FOR 2332)</a> which had the aim to unravel the connections between climatic changes and ancient extinction events. The original aim of the <strong>chronosphere</strong>, developed primarilly <a href="https://adamtkocsis.com">Ádám T. Kocsis</a>, within sub-project <a href="https://cnidaria.nat.uni-erlangen.de/wp/index.php/project/research/project-spex/">SPex</a>, was to make past climate model results available to be easilly incorporated in paleobiological studies. The initial phases were</p>
+    <p>The project was concieved within the second phase (2019-2022) of the <a href="https://cnidaria.nat.uni-erlangen.de/wp/">DFG Research Unit TERSANE (FOR 2332)</a> which had the aim to unravel the connections between climatic changes and ancient extinction events. The original aim of the <strong>chronosphere</strong>, developed primarilly <a href="https://adamtkocsis.com">Ádám T. Kocsis</a>, within sub-project <a href="https://cnidaria.nat.uni-erlangen.de/wp/index.php/project/research/project-spex/">SPex</a>, was to make past climate model results available to be easilly incorporated in paleobiological studies.</p>
 
-    <p>R extension package, which was partitioned and became the <a href="https://chronosphere.info/r_client/">chronosphere</a>, <a href="https://adamkocsis.github.io/via/">via</a> and <a href="https://adamkocsis.github.io/rgplates/">rgplates</a> packages.</p>
-
+    <p>In its original form, the chronosphere was an R extension package, which was partitioned and became the <a href="https://chronosphere.info/r_client/">chronosphere</a>, <a href="https://adamkocsis.github.io/via/">via</a> and <a href="https://adamkocsis.github.io/rgplates/">rgplates</a> packages. The current implementation is in prototype stage and it is under beta (public) testing.</p>
   </div>
 <div class="column is-2">
 <a href="https://cnidaria.nat.uni-erlangen.de/wp/"><img src="https://chronosphere.info/images/logos/tersane-proj.png" /></a>
 </div>
 </div>
 
-<h4 id="current-stage-and-short-term-plans">Current stage and short-term plans</h4>
-
-<p>The current implementation is in prototype stage and it is under beta (public) testing.</p>
-
 <h4 id="long-term-plans">Long-term plans</h4>
 
 <p>The back-end meta-database is currently getting developed to register how data series are derived from each other and how they manifest formalized variables that represent our understanding of the Earth System. The current, static prototype of the chronosphere will be developed into a dynamic framework that allows a community-driven aggregation of data, if necessary, using a Big Data-enabling, distributed NoSQL data management system.</p>
 
-<p>Long-term goal is to store the data objects in a distributed data framework, where the chronosphere fetch calls allow the seamless transition to remote computing where data objects can be used remotely, in situe</p>
-<ul>
-  <li>1 itemization (defining data items)</li>
-  <li>2 access</li>
-  <li>3 caching remote-identical objects in local environment</li>
-  <li>4 remote use</li>
-</ul>
+<p>Long-term goal is to store the data objects in a distributed data framework, where the chronosphere fetch calls allow the seamless transition to remote computing where data objects can be used either locally or directly in an HPC environment.</p>
 
-<p>The chronosphere is meant to become the research API of an Earth Data Entity Network, an in-development, open paleontolgoical data service, that will developed under the initiative of the <a href="https://chronosphere.info/related/#integrated-record-of-ancient-life">Integrated Record of Ancient Life</a>.</p>
-
-<h2 id="funding">Funding</h2>
+<p>The chronosphere is meant to become the research API of an Earth Data Entity Network, an in-development, open paleontolgoical data service, that will developed under the initiative of the <strong>Integrated Record of Ancient Life</strong>.</p>
 
 <hr />
 
@@ -251,7 +232,7 @@
         
 
         <div class="content is-small has-text-centered">
-            <p class="">Last updated: 2024-11-13 16:12.</a></p>
+            <p class="">Last updated: 2024-11-14 10:59.</a></p>
         </div>
     </div>
 </footer>
