@@ -104,19 +104,9 @@ These features should allow the development of a dynamic codebase that expresses
 <section class="section has-background-light" style="text-align:justify" markdown="1">
 # Formal variables 
 
-On a higher level, the chronosphere describes a standard model that tabulates descriptors of the Earth System.
-These descriptors, are the abstract variables that allow us to structure our knowledge about the planets major regimes. These include output varisbles of global climate, geological and macroecological nature, such as near surface air temperature, Sr isotopic composition of seawater and global taxonomic diversity.
- 
-Besides being abstract, they are also numerous: humans have developed thousands, potentially hundreds of thousands of aspecpects, from which we can analyze and asses our planet.
- 
-Technically these are functions that render information of some structure (the range), to other information (the domain).
-- what formal varisbles exist
-- what is their definition domin and range
-- how they translate to other systems
--how different data series are related 
-- what are the variables proxies of
+On a higher level, the chronosphere describes a standard model that tabulates descriptors of the Earth System. These descriptors are the abstract variables that allow us to structure our knowledge about the planets major regimes. These include output varisbles of global climate, geological and macroecological nature, such as near surface air temperature, Sr isotopic composition of seawater and global taxonomic diversity. Besides being abstract, they are also numerous: humans have developed thousands, potentially hundreds of thousands of aspecpects, from which we can analyze and asses our planet. 
 
-
+We gather data in the chronosphere with the intention of accurately describing such variables, which will happen in a later stage of the project.
 
 <p style="float:right"><a href="#top">Scroll to top <i class="fas fa-arrow-up"></i></a></p>
 
